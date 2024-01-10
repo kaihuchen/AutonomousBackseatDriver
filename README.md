@@ -38,7 +38,7 @@ Following are some examples, collected here to demonstrate a number of points:
   <tr>
     <td>Image tested</td>
     <td>Notes</td>
-    <td>Response from GPT-4V</td>
+    <td>Response from OpenAI GPT-4V</td>
     <td>Response from Google Gemini</td>
   </tr>
   <tr>
@@ -46,8 +46,10 @@ Following are some examples, collected here to demonstrate a number of points:
       <img src="images/Billboard_stop_sign.png" style="width:300px" alt="Description of Image 1">
     </td>
     <td>
-      This shows a fake stop sign on a billboard. Correct reaction is to ignore it.
+      This shows a fake stop sign on a billboard.\nCorrect reaction is to ignore it.
     </td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>
@@ -56,5 +58,7 @@ Following are some examples, collected here to demonstrate a number of points:
     <td>
       Tornado ahead. Correct reaction is to turn around.
     </td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
