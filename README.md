@@ -16,7 +16,7 @@ Markdown
 <table>
   <tr>
     <td>
-      <img src="images/Billboard_stop_sign.png" alt="Description of Image 1">
+      <img src="images/Billboard_stop_sign.png" style="width:300px" alt="Description of Image 1">
     </td>
     <td>
       Text describing Image 1
