@@ -6,12 +6,14 @@ This write-up is about the following topics:
 * A live demo named [Autonomouse Backseat Driver](https://chat.openai.com/g/g-UpQkvuX7j-artistic-transformer) is made available through OpenAI's GPTs Store.
 There a user can upload photo of a road scene, and the GPT will then return high-level driving directions along with the reasons for the suggestion.
 * The information below also serves as the guide for the users of the said demo.
-* This
+* Additional information are provided to people interested in pursuing this topic,
+regarding how to select edge-case road scenes to test out OpenAI's GPT-4V model.
+We also welcome people to test the data on other multi-modal LLMs.
 
 ## Background
-As of December 2023, both the Google Gemini and OpenAI GPT-4 are multimodal, meaning that they are capable of extracting meaningful textual information from a given image. When compared the typical CNN-based vision system, 
+As of December 2023, both the Google Gemini and OpenAI GPT-4V are multimodal, meaning that they are capable of extracting meaningful textual information from a given image. When compared the typical CNN-based vision system, 
 
-We name such a component an **Autonomous Backseat Driver**, because we expect this component to offer only higher-level advices to the vehicle, while leaving the low-level controls to other components. This is needed because autonoumous navigation in most cases must operate in an open environment with endless unexpected conditions, and a vision component that is trained narrowly on very specific categories won't have the commonsense to deal with complex situations.
+We named such a component an **Autonomous Backseat Driver**, because we expect this component to offer only higher-level advices to the vehicle, while leaving the low-level controls to other components. This is needed because autonoumous navigation in most cases must operate in an open environment with endless unexpected conditions, and a vision component that is trained narrowly on very specific categories won't have the commonsense to deal with complex situations.
 
 Fortunately for us, the latest multimodal large language models have shown great promise in achieve zero-shot-learning visual recognition for road conditions, and often are able to offer good advice with commonsense, along with an explanation for the given advice.
 
@@ -33,6 +35,12 @@ Following are some examples, collected here to demonstrate a number of points:
 * Important decisions should be explained.
 
 <table>
+  <tr>
+    <td>Image tested</td>
+    <td>Notes</td>
+    <td>Response from GPT-4V</td>
+    <td>Response from Google Gemini</td>
+  </tr>
   <tr>
     <td>
       <img src="images/Billboard_stop_sign.png" style="width:300px" alt="Description of Image 1">
