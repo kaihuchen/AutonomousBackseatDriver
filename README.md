@@ -1,5 +1,12 @@
 # Autonomous Backseat Driver
-This writeup explains how Generative AI can be used in an autonomous vehicle, as a visual commonsense component that offers high-level directives to the vehicle.
+Generative AI can play an important role in any autonomous vehicle that operates in the open world, 
+as a visual component that offers high-level commonsense directives to the vehicle, with the ability to offer explanations to the human operator of the vehicle.
+
+This write-up is about the following topics:
+* A live demo named [Autonomouse Backseat Driver](https://chat.openai.com/g/g-UpQkvuX7j-artistic-transformer) is made available through OpenAI's GPTs Store.
+There a user can upload photo of a road scene, and the GPT will then return high-level driving directions along with the reasons for the suggestion.
+* The information below also serves as the guide for the users of the said demo.
+* This
 
 ## Background
 As of December 2023, both the Google Gemini and OpenAI GPT-4 are multimodal, meaning that they are capable of extracting meaningful textual information from a given image. When compared the typical CNN-based vision system, 
