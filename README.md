@@ -15,10 +15,10 @@ As of December 2023, both the Google Gemini and OpenAI GPT-4 are multimodal, mea
   </tr>
   <tr>
     <td>
-      <img src="images/Billboard_stop_sign.png" style="width:300px" alt="Description of Image 2">
+      <img src="images/tornadoes.jpg" style="width:300px" alt="Description of Image 2">
     </td>
     <td>
-      Text describing Image 2
+      Tornado ahead. Correct reaction is to turn around.
     </td>
   </tr>
 </table>
