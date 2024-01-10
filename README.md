@@ -46,7 +46,7 @@ Following are some examples, collected here to demonstrate a number of points:
       <img src="images/Billboard_stop_sign.png" style="width:300px" alt="Description of Image 1">
     </td>
     <td>
-      This shows a fake stop sign on a billboard.\nCorrect reaction is to ignore it.
+      This shows a fake stop sign on a billboard.<br>Correct reaction is to ignore it.
     </td>
     <td></td>
     <td></td>
