@@ -33,6 +33,10 @@ Following are some examples, collected here to demonstrate a number of points:
 * There are endless situation on the open road that need to be handled well by any autonomous vehicle.
 * There are many confusing situations that require some level of commonsense reasoning in order to reach good decision.
 * Important decisions should be explained.
+  
+| Table Header 1 | Table Header 2 |
+|---|:---:|---:|
+| Cell 1 | Cell 2 | Cell 3 |
 
 <table>
   <tr>
