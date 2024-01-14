@@ -50,7 +50,8 @@ Following are some examples, collected here to demonstrate a number of points:
       <img src="images/Billboard_stop_sign.png" style="width:300px" alt="Description of Image 1">
     </td>
     <td>
-      This shows a fake stop sign on a billboard.<br>Correct reaction is to ignore it.
+      This shows a fake stop sign on a billboard.
+      <br>Correct response is to ignore it.
     </td>
     <td></td>
     <td></td>
@@ -60,7 +61,8 @@ Following are some examples, collected here to demonstrate a number of points:
       <img src="images/tornadoes.jpg" style="width:300px" alt="Description of Image 2">
     </td>
     <td>
-      Tornado ahead. Correct reaction is to turn around.
+      Tornado ahead. This tests the recognition of unusual but dangerous situation.
+      <br>Correct response is to turn around.
     </td>
     <td></td>
     <td></td>
