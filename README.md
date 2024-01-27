@@ -150,7 +150,7 @@ Recommendations:
     The closure could be due to various reasons such as road work, an accident, or a natural disaster. It's important to respect these closures for your own safety and to remain within the law.
 
 ### Example: lane closure
-![lane closure](images/traffic_cones.jpg)
+![lane closure](images/traffice_cones.jpg)
 - Notes: test road condition that requires caution. GPT-4 seems to recognize the **wrong lane** as closed.
 - Response from OpenAI GPT-4: In this image, we see a road maintenance operation underway, with the **right lane** closed off by traffic cones and maintenance vehicles present.
     Hazards:
