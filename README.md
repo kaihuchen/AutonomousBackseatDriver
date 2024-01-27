@@ -208,7 +208,7 @@ it is 2pm Saturday right now, can I park here?
     - The "No Parking" is only for Tuesday from 11 AM to 1 PM.
     - The "No Stopping" and parking time limits apply on school days (Monday through Friday).
 
-    Therefore, you should be able to park at this location at 2 PM on a Saturday without violating the restrictions shown. However, always be sure to observe any other possible restrictions that may not be visible in the image or any temporary restrictions that may be in place.
+        Therefore, you should be able to park at this location at 2 PM on a Saturday without violating the restrictions shown. However, always be sure to observe any other possible restrictions that may not be visible in the image or any temporary restrictions that may be in place.
 ### Example: standing water or sink hole?
 ![standing water](images/oil_slick.jpeg)
 - Notes: somehow GPT-4 sees the hazard as a sinkhole, instead of either standing water or oil slick. When asked to list all possible explanations, then standing water is listed as one possibility. This is a case that warrant further study.
