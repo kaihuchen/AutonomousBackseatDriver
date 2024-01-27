@@ -331,6 +331,15 @@ Note that the emphasis in the responses below are mine.
 
     For traffic safety, it is crucial that official road signs remain unaltered and clearly legible to prevent any misunderstandings on the road. **If you come across a sign like this while driving, follow the traffic rules that apply to standard stop signs** while also being aware of the possibility of other drivers being distracted or confused by the unconventional message.
 
+### Example: fantasy
+![fantasy](images/delorean.jpeg)
+- Notes: this tests whether system can recognize a fantasy scene and react accordingly.
+- Response from OpenAI GPT-4: This image appears to be a digitally manipulated or staged photo depicting a car that resembles the DeLorean time machine from the "Back to the Future" movie franchise, seemingly floating or flying above the ground.
+
+    In reality, cars cannot hover or fly like this, so if this were a real situation, it would certainly be a major traffic hazard. However, since this is not possible with current automotive technology, it can be assumed that this image is not a depiction of a real driving scenario but rather a creative representation or homage to the film.
+
+    For any "Back to the Future" fans, it's a fun and imaginative picture, but on the road, always adhere to traffic laws and the capabilities of real-world vehicles.
+
 <!--
 ### Example: 
 ![](images/)
