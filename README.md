@@ -83,6 +83,20 @@ Note that the emphasis in the responses below are mine.
 
     It's crucial to take immediate action upon seeing this sign and not to continue driving as if conditions are normal.
 
+### Example: false positive tornado image
+![false positive tornado](images/tornadoes_test1.png)
+- Notes: test distinction between real warning signs, and commercials that should be ignored
+- Response from OpenAI GPT-4: The image shows a billboard with a graphic that includes a tornado, which might be associated with a sports team or event in Kansas City. The content of the billboard does not indicate a real tornado threat or weather warning; it appears to be a form of advertisement or branding, perhaps for a sports team named the "Tornadoes."
+
+    In this context, there are no immediate driving hazards present related to weather. However, as always, when driving:
+
+    -Pay attention to the road and your surroundings, not the billboard.
+    - Be mindful of other vehicles and pedestrians.
+    - Follow all traffic signals and road signs.
+    - Stay aware of weather conditions through reliable sources, especially if you are in an area prone to severe weather.
+
+    It's important to differentiate between actual weather warnings and advertisements or symbols used in marketing. For real-time weather updates, one should rely on official weather channels, radio announcements, or mobile weather alerts.
+  
 ### Example: Downed trees
 ![downed trees](images/downed-trees.jpg)
 - Notes: severe road hazard
@@ -101,17 +115,3 @@ Note that the emphasis in the responses below are mine.
 - Notes: 
 - Response from OpenAI GPT-4: 
   
-
-<table>
-  <tr>
-    <td>
-      <img src="images/tornadoes.jpg" style="width:300px" alt="Description of Image 2">
-    </td>
-    <td>
-      Tornado ahead. This tests the recognition of unusual but dangerous situation.
-      <br><br>Correct response is to turn around.
-    </td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
