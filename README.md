@@ -98,10 +98,14 @@ Note that the emphasis in the responses below are mine.
 ![pedestrian in the dark](images/nightcrosswalk2.jpg)
 - Notes: test recognition of pedestrians in low light
 - Response from OpenAI GPT-4: The image shows a pedestrian crossing the street at a crosswalk at night. Here are the potential hazards and the recommended action:
+
     Hazards:
+  
     - Pedestrian in the Roadway: The person crossing the street is the primary concern. At night, visibility is reduced, and the pedestrian might not be easily seen by drivers.
     - Low Light Conditions: Given that it is nighttime, there may be a reduced ability for drivers to see and react to road conditions and pedestrians.
+
     Recommendations:
+
     - Reduce Speed: Slow down when approaching crosswalks, especially in low light conditions.
     - Yield to Pedestrians: Be prepared to stop if necessary to allow the pedestrian to cross safely.
     - Stay Vigilant: Keep an eye out for other pedestrians who may also be trying to cross the street, as there could be more people outside the field of view of this image.
