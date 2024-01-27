@@ -135,14 +135,14 @@ Note that the emphasis in the responses below are mine.
     - Possible vehicle break-in, which could involve window smashing and the associated cost and inconvenience of repairs.
     - Personal safety may be at risk if encountering thieves in the act.
 
-Recommendations:
+    Recommendations:
 
     - Take all electronics, purses, bags, and valuables with you when leaving your vehicle.
     - Leave nothing of value visible inside the vehicle to deter potential theft.
     - If you must leave items in the vehicle, ensure they are well hidden from view.
     - Be vigilant and report any suspicious activity to the US Park Police using the provided contact number.
 
-    Remember, taking proactive steps to secure your belongings can significantly reduce the risk of theft.
+    Remember: taking proactive steps to secure your belongings can significantly reduce the risk of theft.
 
 ### Example: road closed
 ![road closed](images/blocked_road.jpeg)
