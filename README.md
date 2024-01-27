@@ -68,18 +68,16 @@ Note that the emphasis in the responses below are mine.
 
     Here are the plausible serious hazards and recommended actions:
 
-        Immediate Tornado Threat: The warning suggests that a tornado may be very close. The hazard is the potential for the tornado to cross or impact the roadway, posing life-threatening danger to anyone outside of a secure shelter.
-
-        Debris: Tornadoes can carry debris which may be deposited on or near the roadway, creating driving hazards even if the tornado is not directly crossing the road.
-
-        Traffic: The warning may cause sudden or erratic driving behavior as people attempt to seek shelter, which can result in vehicular accidents.
+    - Immediate Tornado Threat: The warning suggests that a tornado may be very close. The hazard is the potential for the tornado to cross or impact the roadway, posing life-threatening danger to anyone outside of a secure shelter.
+    - Debris: Tornadoes can carry debris which may be deposited on or near the roadway, creating driving hazards even if the tornado is not directly crossing the road.
+    - Traffic: The warning may cause sudden or erratic driving behavior as people attempt to seek shelter, which can result in vehicular accidents.
 
     Recommendations:
 
-        If possible, exit the roadway and seek immediate shelter in a sturdy building, preferably in a basement or an interior room on the lowest floor with no windows.
-        Avoid seeking shelter under bridges or overpasses, as they do not provide protection from tornadoes and can create traffic hazards.
-        If there is no available shelter, a last-resort option is to park the car safely away from traffic lanes and lie flat in a low area covering your head and neck with your arms.
-        Keep a tornado survival kit in your vehicle, which includes items like a first aid kit, water, non-perishable food, a flashlight, and a portable weather radio.
+      - If possible, exit the roadway and seek immediate shelter in a sturdy building, preferably in a basement or an interior room on the lowest floor with no windows.
+      - Avoid seeking shelter under bridges or overpasses, as they do not provide protection from tornadoes and can create traffic hazards.
+      - If there is no available shelter, a last-resort option is to park the car safely away from traffic lanes and lie flat in a low area covering your head and neck with your arms.
+      - Keep a tornado survival kit in your vehicle, which includes items like a first aid kit, water, non-perishable food, a flashlight, and a portable weather radio.
 
     It's crucial to take immediate action upon seeing this sign and not to continue driving as if conditions are normal.
 
@@ -90,7 +88,7 @@ Note that the emphasis in the responses below are mine.
 
     In this context, there are no immediate driving hazards present related to weather. However, as always, when driving:
 
-    -Pay attention to the road and your surroundings, not the billboard.
+    - Pay attention to the road and your surroundings, not the billboard.
     - Be mindful of other vehicles and pedestrians.
     - Follow all traffic signals and road signs.
     - Stay aware of weather conditions through reliable sources, especially if you are in an area prone to severe weather.
@@ -110,6 +108,22 @@ Note that the emphasis in the responses below are mine.
 
     The recommended action is to stop the vehicle at a safe distance from the fallen tree and downed power lines. Do not attempt to drive over or around the debris. Turning around and finding an alternate route would be the safest course of action. Additionally, it's crucial to alert the local authorities to the fallen tree and downed power lines so that they can safely clear the road and repair any damage. It's also important to warn other drivers of the hazard if possible.
 
+### Example: complex sign with social warnings
+![smash and grab](images/smash_and_grab.jpg)
+- Notes: this is not directly related the control of a vehicle, but it serves to test whether the system is able to recognize cues in a potentially dangerous environment. 
+- Response from OpenAI GPT-4: The image shows a safety alert sign warning of a "Smash and Grab" hotspot, which indicates a high incidence of theft from vehicles in the area. Here are the hazards and recommendations:
+    Hazards:
+    - Risk of theft from vehicles, potentially leading to loss of valuables and damage to the vehicle.
+    - Possible vehicle break-in, which could involve window smashing and the associated cost and inconvenience of repairs.
+    - Personal safety may be at risk if encountering thieves in the act.
+Recommendations:
+    - Take all electronics, purses, bags, and valuables with you when leaving your vehicle.
+    - Leave nothing of value visible inside the vehicle to deter potential theft.
+    - If you must leave items in the vehicle, ensure they are well hidden from view.
+    - Be vigilant and report any suspicious activity to the US Park Police using the provided contact number.
+
+    Remember, taking proactive steps to secure your belongings can significantly reduce the risk of theft.
+  
 ### Example: 
 ![](images/)
 - Notes: 
