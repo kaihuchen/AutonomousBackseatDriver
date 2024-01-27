@@ -290,6 +290,38 @@ Note that the emphasis in the responses below are mine.
 
     Always maintain a safe following distance to allow time for sudden stops, and be ready to react to the actions of drivers ahead who may also be responding to the hazard.
 
+### Example: single knocked-over traffic cone
+![knocked over traffic cone](images/cone_single_knocked_over.jpg)
+- Notes: testing whether this system has the commonsense to go around a single knocked-over traffic cone, which likely is not meant as a sign to block vehicles
+- Response from OpenAI GPT-4: The image displays a traffic cone that has been knocked over onto the road. While it may not block the path entirely, it still poses a potential hazard to drivers.
+
+    Hazards:
+
+    - Road Obstacle: The fallen cone is an obstacle that vehicles need to avoid, which could lead to sudden lane changes or swerving.
+    - Indication of an Issue: The cone might have been marking a specific hazard on the road, such as a pothole, debris, or an area of construction, which could still be present.
+
+    Recommended Actions:
+
+    - Slow Down: Reduce speed as you approach the cone to give yourself more time to react.
+    - Avoid the Cone: Safely navigate around the cone, ensuring that you check surrounding traffic to do so safely.
+    - Scan for Further Hazards: Look for any additional signs of why the cone was there in the first place, such as road work or a specific hazard on the road.
+    - Do Not Attempt to Re-position the Cone: It’s unsafe to exit your vehicle on a busy road to upright the cone.
+
+    If it's safe to do so, reporting the fallen cone to local authorities or road maintenance can help ensure the hazard is addressed and the cone is put back in place or removed as necessary.
+
+### Example: traffic cones in a corner
+![traffic cones in a conrner](images/cones_on_the_side.jpeg)
+- Notes: testing whether this system will get confused by some traffic cones placed in a corner 
+- Response from OpenAI GPT-4: The image shows three traffic cones placed on a paved area next to a parked red car. This setting suggests a controlled environment, perhaps a driveway or a private parking area.
+
+    While the cones may not present an immediate driving hazard since the vehicle is parked and the cones are off to the side, they could signify a few things:
+
+    - Reserved Parking: The cones may be used to reserve a parking spot or to indicate that parking is not allowed in that particular space.
+    - Proximity Alert: They could be placed to warn the car driver not to reverse further or to mark a boundary for parking.
+    - Potential Obstacle: If the car is to be moved, the driver should be careful not to hit the cones.
+
+    In this context, no specific action is needed since the car is parked. However, if the driver intends to move the car, they should remove the cones before doing so to prevent driving over them. It's also important to ensure that moving the cones is permissible, as they might be there for a specific reason, such as roadwork nearby or to cordon off a restricted
+
 <!--
 ### Example: 
 ![](images/)
