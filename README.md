@@ -107,7 +107,7 @@ Note that the emphasis in the responses below are mine.
     - Stay Vigilant: Keep an eye out for other pedestrians who may also be trying to cross the street, as there could be more people outside the field of view of this image.
     - Use Headlights: Make sure your vehicle's headlights are on and properly adjusted to ensure maximum visibility without blinding other road users.
   
-### Example: Downed trees
+### Example: downed trees
 ![downed trees](images/downed-trees.jpg)
 - Notes: severe road hazard
 - Response from OpenAI GPT-4: In the image, there are several serious hazards present:
@@ -153,8 +153,22 @@ Recommendations:
     - Inform Authorities (if applicable): If you happen to be the first to encounter this without prior warning, it might be helpful to report the road closure to local authorities, especially if it seems like an immediate or unexpected hazard.
 
     The closure could be due to various reasons such as road work, an accident, or a natural disaster. It's important to respect these closures for your own safety and to remain within the law.
-  
-### Example: standing water?
+
+### Example: lane closure
+![lane closure](images/traffic_cones.jpg)
+- Notes: test road condition that requires caution. GPT-4 seems to recognize the **wrong lane** as closed.
+- Response from OpenAI GPT-4: In this image, we see a road maintenance operation underway, with the **right lane** closed off by traffic cones and maintenance vehicles present.
+    Hazards:
+    - Lane Closure: The right lane is closed, necessitating a merge into the open lane to continue safely.
+    - Maintenance Vehicles and Workers: Presence of road work crew and vehicles poses a risk if not navigated cautiously.
+    Recommendations:
+    - Merge Safely: Signal early and merge into the open lane as soon as possible before reaching the lane closure.
+    - Reduce Speed: Follow any posted speed limit reductions and be prepared to stop if necessary.
+    - Stay Alert: Watch for any workers who may be near the traffic lanes and for sudden movements of maintenance vehicles.
+    - Maintain a Safe Distance: Keep a safe following distance from the vehicle in front of you, as well as from the maintenance vehicles and workers.
+    Road work can create unpredictable driving conditions, so it is important to remain vigilant and drive defensively through the work zone.
+
+### Example: standing water or sink hole?
 ![standing water](images/oil_slick.jpeg)
 - Notes: somehow GPT-4 sees the hazard as a sinkhole, instead of either standing water or oil slick. When asked to list all possible explanations, then standing water is listed as one possibility. This is a case that warrant further study.
 - Response from OpenAI GPT-4: In this image, we see a road that has been severely compromised by a sinkhole, which is a significant road hazard. Here's how to address this situation:
