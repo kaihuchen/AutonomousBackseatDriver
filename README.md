@@ -43,6 +43,21 @@ Note that the emphasis in the responses below are mine.
 
     The recommended action would be to immediately stop the vehicle at a safe distance, and reverse or turn around if possible to evacuate the area. Contacting emergency services would be crucial...</td>
 
+### Example: explosion ahead
+![explosion ahead](images/nuclear.jpg)
+- Notes: testing recognition of exceptional event
+- Response from OpenAI GPT-4: This image depicts a large explosion in the form of a mushroom cloud, resembling a nuclear explosion, at the end of a long road.
+
+    If this were a real situation, it would represent an extremely serious and life-threatening hazard. The appropriate response would be:
+
+    - Immediate Evacuation: Do not drive towards the explosion. Turn around and drive away from the blast area as quickly as possible.
+    - Seek Information: Tune into local radio or emergency services channels if possible to get information about what has happened and where to go.
+    - Avoid Exposure: If you are within range of potential fallout, seek shelter immediately. This would typically be an underground area or a building made of thick, dense materials. Stay indoors, seal windows and doors, and wait for instructions from emergency services.
+    - Protective Measures: If exposed to fallout, cover your mouth and nose with a mask or cloth to reduce inhalation of radioactive particles.
+    - Contact Emergency Services: Once at a safe distance or in shelter, contact emergency services for further instructions.
+
+    It is important to note that this response would be appropriate for a real nuclear event. However, the image provided is likely not a real scenario but a digital creation or a photo from a controlled test or movie scene. If you are ever unsure about whether a situation like this is real, it's crucial to seek information from reliable sources and follow official guidance.
+
 ### Example: tornado ahead
 ![tornado ahead](images/tornadoes.jpg)
 - Notes: unusual and extremely dangerous. Testing scenario never trained for, and commonsense reaction. 
