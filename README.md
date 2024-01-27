@@ -186,8 +186,8 @@ Note that the emphasis in the responses below are mine.
     
     Road work can create unpredictable driving conditions, so it is important to remain vigilant and drive defensively through the work zone.
 
-### Example: messy signs
-![messy signs](images/messy_signs.png)
+### Example: too many signs
+![messy signs](images/many_signs.png)
 - Notes: test ability to read complex signs and reason with it
 - Response from OpenAI GPT-4: The image shows a complex array of parking signs with various restrictions:
 
