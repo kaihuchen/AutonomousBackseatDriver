@@ -35,7 +35,7 @@ Following are some examples, collected here to demonstrate a number of points:
 * Important decisions should be explained.
 
 ### Downed trees
-![downed trees](images/downd-trees.jpg)
+![downed trees](images/downed-trees.jpg)
 - Notes: Severe road hazard
 - Response from OpenAI GPT-4: In the image, there are several serious hazards present:
 
