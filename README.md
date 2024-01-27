@@ -186,6 +186,29 @@ Note that the emphasis in the responses below are mine.
     
     Road work can create unpredictable driving conditions, so it is important to remain vigilant and drive defensively through the work zone.
 
+### Example: messy signs
+![messy signs](images/messy_signs.png)
+- Notes: test ability to read complex signs and reason with it
+- Response from OpenAI GPT-4: The image shows a complex array of parking signs with various restrictions:
+
+    - No Parking from 11 AM to 1 PM on Tuesdays for street cleaning.
+    - Tow-away zone with no stopping on school days from Monday to Friday between 7:30 AM and 4 PM.
+    - 15-minute parking for school business on school days from Monday to Friday between 7:30 AM and 8 AM.
+    - 1-hour parking on school days from Monday to Friday between 4 PM and 6 PM.
+    - Vehicles with district permits are exempt from these restrictions.
+
+    The layered restrictions indicate that parking regulations change throughout the day and week, likely to accommodate school traffic and street cleaning schedules. These signs require careful attention to ensure you're not parked illegally at any time, which could result in fines or your vehicle being towed.
+
+    If you're driving in this area, you need to be aware of these restrictions and plan accordingly, especially if you intend to park. Always double-check the current time, the day of the week, and whether school is in session to comply with the regulations. If in doubt, find an alternative place to park where the rules are less restrictive and clearer.
+- Follow-up Q&A:
+    - Q: User
+it is 2pm Saturday right now, can I park here?
+    - A: Based on the information provided in the image and the fact that it is 2 PM on a Saturday, none of the restrictions mentioned on the signs apply:
+
+    - The "No Parking" is only for Tuesday from 11 AM to 1 PM.
+    - The "No Stopping" and parking time limits apply on school days (Monday through Friday).
+
+    Therefore, you should be able to park at this location at 2 PM on a Saturday without violating the restrictions shown. However, always be sure to observe any other possible restrictions that may not be visible in the image or any temporary restrictions that may be in place.
 ### Example: standing water or sink hole?
 ![standing water](images/oil_slick.jpeg)
 - Notes: somehow GPT-4 sees the hazard as a sinkhole, instead of either standing water or oil slick. When asked to list all possible explanations, then standing water is listed as one possibility. This is a case that warrant further study.
