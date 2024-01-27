@@ -322,6 +322,15 @@ Note that the emphasis in the responses below are mine.
 
     In this context, no specific action is needed since the car is parked. However, if the driver intends to move the car, they should remove the cones before doing so to prevent driving over them. It's also important to ensure that moving the cones is permissible, as they might be there for a specific reason, such as roadwork nearby or to cordon off a restricted
 
+### Example: adversarial traffic sign
+![adversarial](images/adversarial.jpg)
+- Notes: this is an adversarial traffic sign designed by University of Washington in 2017, which was reported to cause a driverless car to misread it as a '45' speed limit sign. GPT-4 fully recognizes what it really is, and suggested proper action.
+- Response from OpenAI GPT-4: The image displays a modified stop sign that has been altered to include the words "LOVE" and "HATE," creating a message that reads "LOVE STOP HATE." This alteration is a form of statement or public art and is not an official traffic sign.
+
+    While the original intent of the sign is to instruct drivers to come to a complete stop, the added text transforms it into a message likely intended to promote love and end hate. If this sign is placed on a road, it could potentially confuse drivers due to the additional text. However, the primary function of the stop sign, indicated by its shape and color, is still clear: drivers should come to a complete stop at the sign.
+
+    For traffic safety, it is crucial that official road signs remain unaltered and clearly legible to prevent any misunderstandings on the road. If you come across a sign like this while driving, follow the traffic rules that apply to standard stop signs while also being aware of the possibility of other drivers being distracted or confused by the unconventional message.
+
 <!--
 ### Example: 
 ![](images/)
