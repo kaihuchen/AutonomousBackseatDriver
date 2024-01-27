@@ -228,6 +228,23 @@ it is 2pm Saturday right now, can I park here?
     - Report the Hazard: Inform the local authorities about the road hazard so that they can take appropriate actions to repair the road and set up warnings for other drivers.
     - Alert Other Drivers: If you have a way to warn other drivers, such as hazard lights or if you can place warning devices at a safe distance before the hazard, do so to prevent others from approaching the danger.
 
+### Example: uncommon traffic sign
+![uncommon traffic sign](images/low_salt.jpeg)
+- Notes: uncommon traffic sign, this tests the system breath of knowledge without further training
+- Response from OpenAI GPT-4: The image displays a traffic sign indicating "LOW SALT AREA NEXT 9 MILES." This sign warns drivers that for the next nine miles, the road will not be treated with as much road salt as might normally be expected in icy or snowy conditions.
+
+The hazard in this situation is the increased potential for slippery road conditions, especially during or after winter precipitation when roads are typically salted to melt ice and snow.
+
+    Recommendations for driving in this area:
+
+    - Reduce Speed: Drive more slowly than you would under normal conditions, particularly if the weather is cold and there may be ice.
+    - Increase Following Distance: Leave more space between your vehicle and the one in front of you to allow for longer stopping distances on potentially slick roads.
+    - Avoid Sudden Maneuvers: Be smooth with steering, braking, and accelerating to avoid losing control on slippery surfaces.
+    - Stay Alert: Pay attention to how your vehicle is responding to the road and be ready to react to slippery spots.
+    - Use Proper Tires: If you're in an area that experiences winter weather, ensure you have tires that are appropriate for those conditions.
+
+    Always heed local advisories and be prepared for changing road conditions, especially in areas known for less road treatment during winter weather events.
+
 <!--
 ### Example: 
 ![](images/)
