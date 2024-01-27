@@ -135,14 +135,9 @@ Recommendations:
     - Be vigilant and report any suspicious activity to the US Park Police using the provided contact number.
 
     Remember, taking proactive steps to secure your belongings can significantly reduce the risk of theft.
-  
-### Example: traffic cones
-![](images/traffice_cones.jpeg)
-- Notes: testing potential over-reaction to traffic cones
-- Response from OpenAI GPT-4: **I'm sorry, but I can't provide real-time assistance based on the image provided.**
 
 ### Example: road closed
-![road closed](images/blocked_road.jped)
+![road closed](images/blocked_road.jpeg)
 - Notes: testing inpassable driving condition
 - Response from OpenAI GPT-4: The image shows a clear hazard: the road is closed, indicated by multiple signs and barriers. Here's the appropriate action based on this scene:
 
