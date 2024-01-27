@@ -44,7 +44,7 @@ Note that the emphasis in the responses below are mine.
     The recommended action would be to immediately stop the vehicle at a safe distance, and reverse or turn around if possible to evacuate the area. Contacting emergency services would be crucial...</td>
 
 ### Example: tornado on a billboard commercial
-![downed trees](images/)
+![downed trees](images/tornado_fake.png)
 - Notes: test distinction between real hazard and fictitious ones.
 - Response from OpenAI GPT-4: The image shows a billboard advertising a place called "Naderville," which seems to be a reference to tornadoes, as indicated by the term 'nader, a colloquialism for "tornado." The billboard advertises "‘Nader Kits, Shelters and more," suggesting it is a business that sells emergency supplies and shelters for tornado protection.
 
