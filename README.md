@@ -142,9 +142,7 @@ Recommendations:
 - Response from OpenAI GPT-4: The image shows a clear hazard: the road is closed, indicated by multiple signs and barriers. Here's the appropriate action based on this scene:
 
     - Do Not Proceed: The "ROAD CLOSED" signs are unmistakable indicators that the road ahead is not safe or permissible for travel. You should not attempt to go around or move the barriers.
-
     - Turn Around Safely: Find a safe place to turn around and seek an alternate route. Use a GPS or a map to find another way to your destination.
-
     - Inform Authorities (if applicable): If you happen to be the first to encounter this without prior warning, it might be helpful to report the road closure to local authorities, especially if it seems like an immediate or unexpected hazard.
 
     The closure could be due to various reasons such as road work, an accident, or a natural disaster. It's important to respect these closures for your own safety and to remain within the law.
@@ -153,6 +151,7 @@ Recommendations:
 ![lane closure](images/traffice_cones.jpg)
 - Notes: test road condition that requires caution. GPT-4 seems to recognize the **wrong lane** as closed.
 - Response from OpenAI GPT-4: In this image, we see a road maintenance operation underway, with the **right lane** closed off by traffic cones and maintenance vehicles present.
+
     Hazards:
     - Lane Closure: The right lane is closed, necessitating a merge into the open lane to continue safely.
     - Maintenance Vehicles and Workers: Presence of road work crew and vehicles poses a risk if not navigated cautiously.
@@ -161,12 +160,14 @@ Recommendations:
     - Reduce Speed: Follow any posted speed limit reductions and be prepared to stop if necessary.
     - Stay Alert: Watch for any workers who may be near the traffic lanes and for sudden movements of maintenance vehicles.
     - Maintain a Safe Distance: Keep a safe following distance from the vehicle in front of you, as well as from the maintenance vehicles and workers.
+    
     Road work can create unpredictable driving conditions, so it is important to remain vigilant and drive defensively through the work zone.
 
 ### Example: standing water or sink hole?
 ![standing water](images/oil_slick.jpeg)
 - Notes: somehow GPT-4 sees the hazard as a sinkhole, instead of either standing water or oil slick. When asked to list all possible explanations, then standing water is listed as one possibility. This is a case that warrant further study.
 - Response from OpenAI GPT-4: In this image, we see a road that has been severely compromised by a sinkhole, which is a significant road hazard. Here's how to address this situation:
+
     - Stop the Vehicle: Immediately reduce your speed and come to a stop at a safe distance from the sinkhole.
     - Do Not Attempt to Cross: The sinkhole presents a clear danger, and attempting to cross could result in vehicle damage or a life-threatening situation if the road were to collapse further.
     - Turn Around Safely: Once stopped and it's safe to do so, carefully turn the vehicle around and find an alternate route.
