@@ -230,7 +230,7 @@ it is 2pm Saturday right now, can I park here?
 
 ### Example: uncommon traffic sign
 ![uncommon traffic sign](images/low_salt.jpeg)
-- Notes: uncommon traffic sign, this tests the system breath of knowledge without further training
+- Notes: this is an uncommon traffic sign, meant to test the system breath of knowledge without further training.
 - Response from OpenAI GPT-4: The image displays a traffic sign indicating "LOW SALT AREA NEXT 9 MILES." This sign warns drivers that for the next nine miles, the road will not be treated with as much road salt as might normally be expected in icy or snowy conditions.
 
     The hazard in this situation is the increased potential for slippery road conditions, especially during or after winter precipitation when roads are typically salted to melt ice and snow.
