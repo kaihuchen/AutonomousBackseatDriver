@@ -174,8 +174,10 @@ Recommendations:
     - Report the Hazard: Inform the local authorities about the road hazard so that they can take appropriate actions to repair the road and set up warnings for other drivers.
     - Alert Other Drivers: If you have a way to warn other drivers, such as hazard lights or if you can place warning devices at a safe distance before the hazard, do so to prevent others from approaching the danger.
 
+<!--
 ### Example: 
 ![](images/)
 - Notes: 
 - Response from OpenAI GPT-4: 
-  
+-->
+
