@@ -34,6 +34,13 @@ Following are some examples, collected here to demonstrate a number of points:
 * There are many confusing situations that require some level of commonsense reasoning in order to reach good decision.
 * Important decisions should be explained.
 
+### Monster ahead
+![downed trees](images/monster2.jpg)
+    - Notes: extremely unusual scene
+    - Response from OpenAI GPT-4: This image appears to be a fictional or altered scene, as it shows a giant creature resembling a dinosaur in an urban setting, which does not exist in reality. In the context of the scenario you've asked me to provide advice on, if this were a real situation, it would constitute an extreme hazard.
+
+    The recommended action would be to immediately stop the vehicle at a safe distance, and reverse or turn around if possible to evacuate the area. Contacting emergency services would be crucial...</td>
+
 ### Downed trees
 ![downed trees](images/downed-trees.jpg)
 - Notes: Severe road hazard
@@ -45,48 +52,10 @@ Following are some examples, collected here to demonstrate a number of points:
 
     Road Debris: Smaller branches and debris from the tree are scattered across the road, posing additional risks for tire damage and vehicle stability.
 
-The recommended action is to stop the vehicle at a safe distance from the fallen tree and downed power lines. Do not attempt to drive over or around the debris. Turning around and finding an alternate route would be the safest course of action. Additionally, it's crucial to alert the local authorities to the fallen tree and downed power lines so that they can safely clear the road and repair any damage. It's also important to warn other drivers of the hazard if possible.
+    The recommended action is to stop the vehicle at a safe distance from the fallen tree and downed power lines. Do not attempt to drive over or around the debris. Turning around and finding an alternate route would be the safest course of action. Additionally, it's crucial to alert the local authorities to the fallen tree and downed power lines so that they can safely clear the road and repair any damage. It's also important to warn other drivers of the hazard if possible.
 
-### Monster
 
 <table>
-  <tr>
-    <td>Image tested</td>
-    <td>Notes</td>
-    <td>Response from OpenAI GPT-4V</td>
-    <td>Response from Google Bard/Gemini</td>
-  </tr>
-  <tr>
-    <td style="width:300px>
-      <img src="images/monster2.jpg">
-    </td>
-    <td>
-      Extremely unusual scene
-    </td>
-    <td>This image appears to be a fictional or altered scene, as it shows a giant creature resembling a dinosaur in an urban setting, which does not exist in reality. In the context of the scenario you've asked me to provide advice on, if this were a real situation, it would constitute an extreme hazard.
-
-The recommended action would be to immediately stop the vehicle at a safe distance, and reverse or turn around if possible to evacuate the area. Contacting emergency services would be crucial...</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td style="width:300px>
-      <img src="images/downd-trees.jpg">
-    </td>
-    <td>
-      Hazadous condition
-    </td>
-    <td>In the image, there are several serious hazards present:
-
-    Fallen Tree: A large tree has fallen across the road, completely blocking passage. This poses a direct physical barrier to vehicles.
-
-    Downed Power Lines: The fallen tree has brought down power lines, which are potentially live and represent a significant electrocution risk.
-
-    Road Debris: Smaller branches and debris from the tree are scattered across the road, posing additional risks for tire damage and vehicle stability.
-
-The recommended action is to stop the vehicle at a safe distance from the fallen tree and downed power lines. Do not attempt to drive over or around the debris. Turning around and finding an alternate route would be the safest course of action. Additionally, it's crucial to alert the local authorities to the fallen tree and downed power lines so that they can safely clear the road and repair any damage. It's also important to warn other drivers of the hazard if possible.</td>
-    <td></td>
-  </tr>
-
   <tr>
     <td>
       <img src="images/tornadoes.jpg" style="width:300px" alt="Description of Image 2">
