@@ -47,7 +47,7 @@ Following are some examples, collected here to demonstrate a number of points:
   </tr>
   <tr>
     <td>
-      <img src="images/monster2.png" style="width:300px" alt="Description of Image 1">
+      <img src="images/monster2.jpg" style="width:300px">
     </td>
     <td>
       Extremely unusual scene
