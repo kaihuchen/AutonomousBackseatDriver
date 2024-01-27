@@ -201,8 +201,7 @@ Note that the emphasis in the responses below are mine.
 
     If you're driving in this area, you need to be aware of these restrictions and plan accordingly, especially if you intend to park. Always double-check the current time, the day of the week, and whether school is in session to comply with the regulations. If in doubt, find an alternative place to park where the rules are less restrictive and clearer.
 - Follow-up Q&A:
-    - Q: User
-it is 2pm Saturday right now, can I park here?
+    - Q: it is 2pm Saturday right now, can I park here?
     - A: Based on the information provided in the image and the fact that it is 2 PM on a Saturday, none of the restrictions mentioned on the signs apply:
 
         - The "No Parking" is only for Tuesday from 11 AM to 1 PM.
@@ -219,7 +218,7 @@ it is 2pm Saturday right now, can I park here?
 
 ### Example: standing water or sink hole?
 ![standing water](images/oil_slick.jpeg)
-- Notes: somehow GPT-4 sees the hazard as a sinkhole, instead of either standing water or oil slick. When asked to list all possible explanations, then standing water is listed as one possibility. This is a case that warrant further study.
+- Notes: somehow GPT-4 sees the hazard as a sinkhole. I initially thought that it is a puddle of water, and only after very careful examination that I had to agree that GPT-4 was right after all. 
 - Response from OpenAI GPT-4: In this image, we see a road that has been severely compromised by a sinkhole, which is a significant road hazard. Here's how to address this situation:
 
     - Stop the Vehicle: Immediately reduce your speed and come to a stop at a safe distance from the sinkhole.
@@ -244,6 +243,52 @@ it is 2pm Saturday right now, can I park here?
     - Use Proper Tires: If you're in an area that experiences winter weather, ensure you have tires that are appropriate for those conditions.
 
     Always heed local advisories and be prepared for changing road conditions, especially in areas known for less road treatment during winter weather events.
+
+### Example: inflatable minion on road 
+![inflatable](images/inflatable.png)
+- Notes: this tests if system knows how to respond to unusual and unique road hazard.
+- Response from OpenAI GPT-4: The image shows an oversized inflatable object, which appears to be a large minion character, obstructing the roadway. This is a unique and unexpected road hazard.
+
+    Here are the hazards and recommended actions:
+
+    Hazards:
+
+    - Road Obstruction: The large inflatable is blocking the road, potentially causing traffic to stop or slow down unexpectedly.
+    - Driver Distraction: The unusual sight might distract drivers, increasing the risk of accidents due to inattention.
+    - Sudden Braking: Vehicles ahead may brake suddenly to avoid the obstruction, requiring quick reactions from all following drivers.
+
+    Recommended Actions:
+
+    - Reduce Speed: Slow down immediately to allow more time to react.
+    - Increase Following Distance: Allow more space between your vehicle and the one ahead to provide more stopping distance.
+    - Stay Alert: Be prepared for unexpected actions from other drivers who are also reacting to the obstruction.
+    - Obey Traffic Signals: If traffic is being directed by police or temporary road signs, follow their directions.
+    - Do Not Attempt to Overtake: It is not safe to try to overtake or go around the obstruction unless it is clear and safe to do so.
+
+    In this scenario, the priority is to avoid contributing to potential accidents by staying alert and prepared for sudden stops. If safe to do so, reporting the hazard to the proper authorities would also be advisable so they can remove the obstruction and restore normal traffic flow.
+
+### Example: dangling wire 
+![dangling wire](images/)
+- Notes: testing the recognition of the barely visible dangling wire, and the potential hazard that it poses.
+- Response from OpenAI GPT-4: The image shows a street light or traffic signal that has become dislodged and is hanging low over the roadway, posing a significant hazard. This is especially dangerous at night when visibility is reduced.
+
+    Here are the hazards and recommended actions:
+
+    Hazards:
+
+    - Low-Hanging Obstruction: The hanging object could potentially collide with taller vehicles, causing damage or secondary accidents.
+    - Electrical Hazard: If the object is part of the electrical infrastructure, there could be live wires posing a risk of electrocution or fire.
+    - Distraction: The unusual sight might distract drivers, which could lead to accidents.
+
+    Recommended Actions:
+
+    - Slow Down: Reduce your speed significantly to safely navigate around the hazard.
+    - Change Lanes: If it's safe to do so, and you're on a multi-lane road, switch to a lane further away from the hanging object.
+    - Use Hazard Lights: Activate your vehicle’s hazard lights to alert other drivers to the potential danger.
+    - Do Not Touch: Never attempt to move or touch downed electrical equipment or wires.
+    - Report the Hazard: Contact local authorities or emergency services to report the road hazard so that it can be dealt with safely and promptly.
+
+    Always maintain a safe following distance to allow time for sudden stops, and be ready to react to the actions of drivers ahead who may also be responding to the hazard.
 
 <!--
 ### Example: 
