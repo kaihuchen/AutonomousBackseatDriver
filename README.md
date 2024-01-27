@@ -128,11 +128,15 @@ Note that the emphasis in the responses below are mine.
 ![smash and grab](images/smash_and_grab.jpg)
 - Notes: this is not directly related the control of a vehicle, but it serves to test whether the system is able to recognize cues in a potentially dangerous environment. 
 - Response from OpenAI GPT-4: The image shows a safety alert sign warning of a "Smash and Grab" hotspot, which indicates a high incidence of theft from vehicles in the area. Here are the hazards and recommendations:
+
     Hazards:
+  
     - Risk of theft from vehicles, potentially leading to loss of valuables and damage to the vehicle.
     - Possible vehicle break-in, which could involve window smashing and the associated cost and inconvenience of repairs.
     - Personal safety may be at risk if encountering thieves in the act.
+
 Recommendations:
+
     - Take all electronics, purses, bags, and valuables with you when leaving your vehicle.
     - Leave nothing of value visible inside the vehicle to deter potential theft.
     - If you must leave items in the vehicle, ensure they are well hidden from view.
