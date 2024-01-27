@@ -38,8 +38,8 @@ Note that the emphasis in the responses below are mine.
 
 ### Example: Monster ahead
 ![downed trees](images/monster2.jpg)
-- **Notes**: extremely unusual scene
-- **Response from OpenAI GPT-4**: This image appears to be a **fictional or altered scene**, as it shows a giant creature resembling a dinosaur in an urban setting, which does not exist in reality. In the context of the scenario you've asked me to provide advice on, if this were a real situation, it would constitute an extreme hazard.
+- **Notes**: extremely unusual scene. Testing sense of reality.
+- **Response from OpenAI GPT-4**: This image appears to be a **fictional or altered scene**, as it shows a giant creature resembling a dinosaur in an urban setting, which does not exist in reality. In the context of the scenario you've asked me to provide advice on, **if this were a real situation**, it would constitute an extreme hazard.
 
     The recommended action would be to immediately stop the vehicle at a safe distance, and reverse or turn around if possible to evacuate the area. Contacting emergency services would be crucial...</td>
 
@@ -56,6 +56,35 @@ Note that the emphasis in the responses below are mine.
 
     The recommended action is to stop the vehicle at a safe distance from the fallen tree and downed power lines. Do not attempt to drive over or around the debris. Turning around and finding an alternate route would be the safest course of action. Additionally, it's crucial to alert the local authorities to the fallen tree and downed power lines so that they can safely clear the road and repair any damage. It's also important to warn other drivers of the hazard if possible.
 
+### Example: 
+![downed trees](images/tornadoes.jpg)
+- Notes: unusual and extremely dangerous. Testing scenario never trained for, and commonsense reaction. 
+- Response from OpenAI GPT-4: The image depicts a large tornado directly in the path of the road. Tornadoes are extremely dangerous and can cause catastrophic damage to vehicles, buildings, and the environment, as well as serious injury or loss of life.
+
+    The immediate recommendation is to not proceed. Turn the vehicle around and drive away from the tornado at a right angle to its apparent path to seek immediate shelter. If you cannot quickly drive to a safe location, it's advised to exit the vehicle and find a low-lying area, such as a ditch, to lie down in, covering your head with your arms to protect yourself from flying debris and high winds. Do not seek shelter under overpasses or bridges, as these can create dangerous wind channels.
+
+    It's also important to listen to weather alerts and have a plan for seeking shelter in case of severe weather like this. If you're in a region prone to tornadoes, keeping an emergency kit in your vehicle, including a first aid kit, water, food, and a portable weather radio, is advisable.
+
+### Example: 
+![downed trees](images/)
+- Notes: 
+- Response from OpenAI GPT-4: 
+  
+### Example: 
+![downed trees](images/)
+- Notes: 
+- Response from OpenAI GPT-4: 
+  
+### Example: 
+![downed trees](images/)
+- Notes: 
+- Response from OpenAI GPT-4: 
+  
+### Example: 
+![downed trees](images/)
+- Notes: 
+- Response from OpenAI GPT-4: 
+  
 
 <table>
   <tr>
