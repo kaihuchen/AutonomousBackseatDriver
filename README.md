@@ -34,16 +34,18 @@ Following are some examples, collected here to demonstrate a number of points:
 * There are many confusing situations that require some level of commonsense reasoning in order to reach good decision.
 * Important decisions should be explained.
 
-### Monster ahead
+Note that the emphasis in the responses below are mine.
+
+### Example: Monster ahead
 ![downed trees](images/monster2.jpg)
-    - Notes: extremely unusual scene
-    - Response from OpenAI GPT-4: This image appears to be a fictional or altered scene, as it shows a giant creature resembling a dinosaur in an urban setting, which does not exist in reality. In the context of the scenario you've asked me to provide advice on, if this were a real situation, it would constitute an extreme hazard.
+- **Notes**: extremely unusual scene
+- **Response from OpenAI GPT-4**: This image appears to be a **fictional or altered scene**, as it shows a giant creature resembling a dinosaur in an urban setting, which does not exist in reality. In the context of the scenario you've asked me to provide advice on, if this were a real situation, it would constitute an extreme hazard.
 
     The recommended action would be to immediately stop the vehicle at a safe distance, and reverse or turn around if possible to evacuate the area. Contacting emergency services would be crucial...</td>
 
-### Downed trees
+### Example: Downed trees
 ![downed trees](images/downed-trees.jpg)
-- Notes: Severe road hazard
+- Notes: severe road hazard
 - Response from OpenAI GPT-4: In the image, there are several serious hazards present:
 
     Fallen Tree: A large tree has fallen across the road, completely blocking passage. This poses a direct physical barrier to vehicles.
