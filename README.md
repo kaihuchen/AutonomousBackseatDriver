@@ -342,7 +342,7 @@ Note that the emphasis in the responses below are mine.
 
 ### Example: wrong way
 ![wrong way](images/wrong_way.png)
-- Notes: initially GPT-4v did not spot the car going the wrong way, but subsequent queries show that it has no problem giving many details of the car, and recommended the correct action.
+- Notes: initially GPT-4v did not spot the car going the wrong way, but subsequent queries show that it has no problem picking up many details of the car, and recommended the correct action.
 - Response from OpenAI GPT-4: Recommendation: Maintain a cautious speed and prepare to slow down if necessary.
 
     Explanation: The image shows a heavy traffic situation with multiple lanes and vehicles in close proximity. There is a vehicle directly in front of us which necessitates maintaining a safe following distance. The car to the right appears to be merging or changing lanes without much space, which could indicate a potential hazard. It is also important to monitor the larger vehicle to our right, a truck, which has limited visibility and could make sudden moves due to blind spots. The lighting conditions suggest either early morning or late evening, which can sometimes affect drivers' visibility and alertness.
@@ -357,6 +357,27 @@ Note that the emphasis in the responses below are mine.
     - A: The car going the wrong way is a silver sedan. It is positioned in a lane intended for traffic moving in the opposite direction, facing oncoming vehicles. The vehicle's headlights are on, which suggests that the driver might be aware of being in the wrong lane but is in a situation that they need to correct. The car appears to be stationary or moving very slowly, as there's no motion blur that would indicate speed, unlike the surrounding vehicles which show some blur due to the camera's exposure during movement.
 
         This is an immediate hazard, and utmost caution is required to avoid an accident.
+
+### Example: invisible truck
+![invisible truck](images/invisible_truck.jpeg)
+- Notes: testing whether system can detect an overturned semi-truck that is almost featureless
+- Response from OpenAI GPT-4: The image shows an overturned semi-truck that has resulted in its trailer lying across the roadway, creating a complete road blockage. This is an immediate and severe traffic hazard.
+
+    Hazards:
+
+    - Complete Road Blockage: The trailer is blocking all lanes, making the road impassable.
+    - Risk of Collision: Approaching vehicles are at risk of colliding with the trailer if they are not able to stop in time.
+    - Potential for Secondary Accidents: As vehicles approach the scene, there's a risk of secondary accidents due to sudden braking or swerving.
+
+    Recommended Actions:
+
+    - Stop Safely: Reduce speed and come to a safe stop at a considerable distance from the overturned truck.
+    - Turn on Hazard Lights: Use your vehicle’s hazard lights to warn other drivers of the danger ahead.
+    - Do Not Attempt to Pass: It is unsafe to try to go around the blockage, especially if you cannot see what’s on the other side.
+    - Wait for Instructions: Stay in your vehicle and wait for emergency services or traffic management personnel to direct you.
+    - Report the Incident: If it appears that the authorities are not yet aware of the accident, call emergency services to report the location and nature of the hazard.
+
+    In situations like this, it is crucial to remain patient and wait for professionals to handle the situation. They will determine the best course of action for clearing the roadway and redirecting traffic.
 
 <!--
 ### Example: 
