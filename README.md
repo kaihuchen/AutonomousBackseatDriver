@@ -11,7 +11,7 @@ Autonomous cars get commonsense! Multimodal LLM handles crazy road situations li
     * Distinguishing fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
     * Recognizing tornado on a billboard commercial as false positive, while a tornado alert on a digital display is correctly identified as true warning.
     * Spotting pedestrian in crosswalk under low light situation.
-    * Read and fully understand complex signs with lots of text, including non-driving signs such as the [smash and grab](#user-content-example-complex-sign-with-social-warnings) case.
+    * Read and fully understand complex signs with lots of text, including non-driving signs such as the [smash and grab](#user-content-case-complex-sign-with-social-warnings) case.
     * Reasoning against complex signs and answer interactive query correctly (see case [too many signs](#user-content-case-too-many-signs))
     * Ignoring impossible road sign (such as speed limit of 0)
     * Understanding uncommon warning signs (such as the 'low salt' sign)
