@@ -7,7 +7,7 @@
     * Distinguishing fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
     * Recognizing false positives such as a tornado on a billboard commercial, or a true warning sign such as the tornado alert on a digital display.
     * Spotting pedestrian in crosswalk under low light situation.
-    * Read and fully understand complex sign with many words.
+    * Read and fully understand complex traffic sign with lots of text.
     * Reason against complex signs and answer query correctly (see case [too many signs](#kaihuchen/AutonomousBackseatDriver/edit/main/README.md))
     * Ignore impossible road sign (such as speed limit of 0)
     * Understand uncommon warning signs (such as the 'low salt' sign)
