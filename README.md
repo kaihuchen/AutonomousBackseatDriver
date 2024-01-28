@@ -1,7 +1,9 @@
 # Autonomous Backseat Driver
 Multimodal Generative AI, such as the OpenAI GPT-4V or Google Gemini, can be used to provide **high-level commonsense suggestions** and detailed explanations to autonomous vehicles operating in the **open world**. This is not about lower-level controls like lane following, navigation, or parking, but about assessing the overall situation and providing appropriate advice.
 
-Why emphasizing **commonsense** here? This is because any AI device that operates in the open world must handle infinite number of scenarios, and only generative AI trained on massive amount of data has the chance of handling this properly. 
+We emphasize the **commonsense** aspect here because any AI device that operates in the open world must handle infinite number of scenarios, and only generative AI trained on massive amount of data has the chance of handling this properly. 
+
+Our goals here is to test the target multimodal models with many outlier cases in order to probe the target model's commonsense ability. In other words, the target model needs to draw from a wide range of world knowledge in order to reach appropriate response. If a model can pass most of the given test cases, then perhaps we can be certain that using such a model in autonomous vehicles is feasible and truely beneficial. 
 
 ## Live Demo
 A live demo named [Autonomouse Backseat Driver](https://github.com/kaihuchen/AutonomousBackseatDriver) is made available as a Custom GPT in OpenAI's GPTs Store.
@@ -12,12 +14,10 @@ You are welcome to go there to upload photo of a road scene, and the this Custom
 
 ## Test Cases
 
-Following is a list of test cases, collected here to achieve the following:
+Following is a list of test cases, with the following tests parameters:
 
 * At this point we conduct the tests against GPT-4V. Later we may also test it with Google Gemini. All models tested are as-is without any fine-tuning.
-* We use Autonomous Car as our test scenario. If successful, then it indicates that testing with other types of autonoumous vehicles such as drones or mobile robots might be worthwhile.
-* Each test case is designed as an outlier case to probe the target model's commonsense ability. In other words, the target model needs to draw from a wide range of world knowledge in order to reach appropriate response.
-* Model's should explain its response.
+* We use Autonomous Car as our test scenario. If successful, then it indicates that applying this approach to other types of autonoumous vehicles such as drones or mobile robots are also worthwhile.
 
 Note that the emphasis in the responses given below are mine.
 
