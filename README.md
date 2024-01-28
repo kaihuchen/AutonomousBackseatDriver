@@ -331,14 +331,32 @@ Note that the emphasis in the responses below are mine.
 
     For traffic safety, it is crucial that official road signs remain unaltered and clearly legible to prevent any misunderstandings on the road. **If you come across a sign like this while driving, follow the traffic rules that apply to standard stop signs** while also being aware of the possibility of other drivers being distracted or confused by the unconventional message.
 
-### Example: fantasy
-![fantasy](images/delorean.jpeg)
+### Example: Back to the Future
+![back to the future](images/delorean.jpeg)
 - Notes: this tests whether system can recognize a fantasy scene and react accordingly.
 - Response from OpenAI GPT-4: This image appears to be a digitally manipulated or staged photo depicting a car that resembles the DeLorean time machine from the "Back to the Future" movie franchise, seemingly floating or flying above the ground.
 
     In reality, cars cannot hover or fly like this, so if this were a real situation, it would certainly be a major traffic hazard. However, since this is not possible with current automotive technology, it can be assumed that this image is not a depiction of a real driving scenario but rather a creative representation or homage to the film.
 
     For any "Back to the Future" fans, it's a fun and imaginative picture, but on the road, always adhere to traffic laws and the capabilities of real-world vehicles.
+
+### Example: wrong way
+![wrong way](images/wrong_way.png)
+- Notes: initially GPT-4v did not spot the car going the wrong way, but subsequent queries show that it has no problem giving many details of the car, and recommended the correct action.
+- Response from OpenAI GPT-4: Recommendation: Maintain a cautious speed and prepare to slow down if necessary.
+
+    Explanation: The image shows a heavy traffic situation with multiple lanes and vehicles in close proximity. There is a vehicle directly in front of us which necessitates maintaining a safe following distance. The car to the right appears to be merging or changing lanes without much space, which could indicate a potential hazard. It is also important to monitor the larger vehicle to our right, a truck, which has limited visibility and could make sudden moves due to blind spots. The lighting conditions suggest either early morning or late evening, which can sometimes affect drivers' visibility and alertness.
+
+    Be aware of the vehicles' brake lights around you, which can indicate slowing traffic ahead. Keep an eye on the behavior of the car that is merging, ensure that your headlights are on if visibility is low, and be ready to react if the traffic flow changes suddenly.
+- Follow-up Q&A:
+    - Q: Is the any car going the wrong way here?
+    - A: Yes, there appears to be a car facing the wrong direction in the lane second from the left. This is a serious hazard as it poses a risk for a head-on collision.
+
+        Recommendation: Immediately slow down and maintain a safe distance from the vehicle facing the wrong way. Use your vehicle's indicators to signal other drivers about the potential danger and be prepared to stop or change lanes if it can be done safely. It is also advisable to alert the authorities as soon as it is safe to do so.
+    - Q: describe this car
+    - A: The car going the wrong way is a silver sedan. It is positioned in a lane intended for traffic moving in the opposite direction, facing oncoming vehicles. The vehicle's headlights are on, which suggests that the driver might be aware of being in the wrong lane but is in a situation that they need to correct. The car appears to be stationary or moving very slowly, as there's no motion blur that would indicate speed, unlike the surrounding vehicles which show some blur due to the camera's exposure during movement.
+
+        This is an immediate hazard, and utmost caution is required to avoid an accident.
 
 <!--
 ### Example: 
