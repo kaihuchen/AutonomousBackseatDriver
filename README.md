@@ -1,6 +1,6 @@
 # Autonomous Backseat Driver
 
-# Summary
+## Summary
 * Our tests show that multimodal LLM, such as OpenAI's GPT-4V, can be used as a viable solution to endow autonomous vehicles with the commonsense needed to handle many outlier scenarios properly.
 * Multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [Standing water or sink hole](#user-content-example-standing-water-or-sink-hole))
 * Overall the GPT-4V model has performed extremely well, and succeeded at the following:
@@ -16,8 +16,7 @@
     * Doesn't get distracted by inconsequential traffic signs (e.g., traffic cones in a corner)
     * Dose not get confused by adversarial traffic signs.
 
-
-# Background
+## Background
 Multimodal Generative AI, such as the OpenAI GPT-4V or Google Gemini, can be used to provide **high-level commonsense suggestions** and detailed explanations to autonomous vehicles operating in the **open world**. This is not about lower-level controls like lane following, navigation, or parking, but about assessing the overall situation and providing appropriate advice.
 
 We emphasize the **commonsense** aspect here because any AI device that operates in the open world must handle infinite number of scenarios, and only generative AI trained on massive amount of data has the chance of handling this properly. 
