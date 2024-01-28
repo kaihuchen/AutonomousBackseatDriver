@@ -52,7 +52,7 @@ Note that the emphasis in the responses given below are mine.
 
     The recommended action would be to immediately stop the vehicle at a safe distance, and reverse or turn around if possible to evacuate the area. Contacting emergency services would be crucial...</td>
 
-### Example: explosion ahead
+### Case: explosion ahead
 ![explosion ahead](images/nuclear.jpg)
 - Notes: testing recognition of exceptional event
 - Response from OpenAI GPT-4V: This image depicts a large explosion in the form of a mushroom cloud, resembling a nuclear explosion, at the end of a long road.
@@ -67,7 +67,7 @@ Note that the emphasis in the responses given below are mine.
 
     It is important to note that this response would be appropriate for a real nuclear event. However, the image provided is likely not a real scenario but a digital creation or a photo from a controlled test or movie scene. If you are ever unsure about whether a situation like this is real, it's crucial to seek information from reliable sources and follow official guidance.
 
-### Example: tornado ahead
+### Case: tornado ahead
 ![tornado ahead](images/tornadoes.jpg)
 - Notes: unusual and extremely dangerous. Testing scenario never trained for, and commonsense reaction. 
 - Response from OpenAI GPT-4V: The image depicts a large tornado directly in the path of the road. Tornadoes are extremely dangerous and can cause catastrophic damage to vehicles, buildings, and the environment, as well as serious injury or loss of life.
@@ -76,7 +76,7 @@ Note that the emphasis in the responses given below are mine.
 
     It's also important to listen to weather alerts and have a plan for seeking shelter in case of severe weather like this. If you're in a region prone to tornadoes, keeping an emergency kit in your vehicle, including a first aid kit, water, food, and a portable weather radio, is advisable.
 
-### Example: tornado on a commercial billboard 
+### Case: tornado on a commercial billboard 
 ![downed trees](images/tornado_fake.png)
 - Notes: test distinction between real hazard and fictitious ones.
 - Response from OpenAI GPT-4V: The image shows a billboard advertising a place called "Naderville," which seems to be a reference to tornadoes, as indicated by the term 'nader, a colloquialism for "tornado." The billboard advertises "‘Nader Kits, Shelters and more," suggesting it is a business that sells emergency supplies and shelters for tornado protection.
@@ -85,7 +85,7 @@ Note that the emphasis in the responses given below are mine.
 
     There are no actions required for the driver in relation to this billboard, but it would be wise to stay informed about the weather when driving in regions where tornadoes are common.
 
-### Example: tornado warning sign
+### Case: tornado warning sign
 ![](images/billboard_tornado.jpeg)
 - Notes: testing recognition of non-standard warning sign, and recognition that this it is not a commercial
 - Response from OpenAI GPT-4V: The image shows a digital road sign with a message that reads "TORNADO WARNING FOR THIS AREA." A tornado warning indicates that a tornado has been sighted or indicated by weather radar, and there is an imminent danger to life and property.
@@ -104,7 +104,7 @@ Note that the emphasis in the responses given below are mine.
 
     It's crucial to take immediate action upon seeing this sign and not to continue driving as if conditions are normal.
 
-### Example: false positive tornado image
+### Case: false positive tornado image
 ![false positive tornado](images/tornadoes_test1.png)
 - Notes: test distinction between real warning signs, and commercials that should be ignored
 - Response from OpenAI GPT-4V: The image shows a billboard with a graphic that includes a tornado, which might be associated with a sports team or event in Kansas City. The content of the billboard does not indicate a real tornado threat or weather warning; it appears to be a form of advertisement or branding, perhaps for a sports team named the "Tornadoes."
@@ -118,7 +118,7 @@ Note that the emphasis in the responses given below are mine.
 
     It's important to differentiate between actual weather warnings and advertisements or symbols used in marketing. For real-time weather updates, one should rely on official weather channels, radio announcements, or mobile weather alerts.
 
-### Example: pedestrian in the dark
+### Case: pedestrian in the dark
 ![pedestrian in the dark](images/nightcrosswalk2.jpg)
 - Notes: test recognition of pedestrians in low light
 - Response from OpenAI GPT-4V: The image shows a pedestrian crossing the street at a crosswalk at night. Here are the potential hazards and the recommended action:
@@ -135,7 +135,7 @@ Note that the emphasis in the responses given below are mine.
     - Stay Vigilant: Keep an eye out for other pedestrians who may also be trying to cross the street, as there could be more people outside the field of view of this image.
     - Use Headlights: Make sure your vehicle's headlights are on and properly adjusted to ensure maximum visibility without blinding other road users.
   
-### Example: downed trees
+### Case: downed trees
 ![downed trees](images/downed-trees.jpg)
 - Notes: severe road hazard
 - Response from OpenAI GPT-4V: In the image, there are several serious hazards present:
@@ -148,7 +148,7 @@ Note that the emphasis in the responses given below are mine.
 
     The recommended action is to stop the vehicle at a safe distance from the fallen tree and downed power lines. Do not attempt to drive over or around the debris. Turning around and finding an alternate route would be the safest course of action. Additionally, it's crucial to alert the local authorities to the fallen tree and downed power lines so that they can safely clear the road and repair any damage. It's also important to warn other drivers of the hazard if possible.
 
-### Example: complex sign with social warnings
+### Case: complex sign with social warnings
 ![smash and grab](images/smash_and_grab.jpg)
 - Notes: this is not directly related the control of a vehicle, but it serves to test whether the system is able to recognize cues in a potentially dangerous environment. 
 - Response from OpenAI GPT-4V: The image shows a safety alert sign warning of a "Smash and Grab" hotspot, which indicates a high incidence of theft from vehicles in the area. Here are the hazards and recommendations:
@@ -168,7 +168,7 @@ Note that the emphasis in the responses given below are mine.
 
     Remember: taking proactive steps to secure your belongings can significantly reduce the risk of theft.
 
-### Example: road closed
+### Case: road closed
 ![road closed](images/blocked_road.jpeg)
 - Notes: testing inpassable driving condition
 - Response from OpenAI GPT-4V: The image shows a clear hazard: the road is closed, indicated by multiple signs and barriers. Here's the appropriate action based on this scene:
@@ -179,7 +179,7 @@ Note that the emphasis in the responses given below are mine.
 
     The closure could be due to various reasons such as road work, an accident, or a natural disaster. It's important to respect these closures for your own safety and to remain within the law.
 
-### Example: lane closure
+### Case: lane closure
 ![lane closure](images/traffice_cones.jpg)
 - Notes: test road condition that requires caution. GPT-4V seems to recognize the **wrong lane** as closed.
 - Response from OpenAI GPT-4V: In this image, we see a road maintenance operation underway, with the **right lane** closed off by traffic cones and maintenance vehicles present.
@@ -195,7 +195,7 @@ Note that the emphasis in the responses given below are mine.
     
     Road work can create unpredictable driving conditions, so it is important to remain vigilant and drive defensively through the work zone.
 
-### Example: too many signs
+### Case: too many signs
 ![messy signs](images/many_signs.png)
 - Notes: test ability to read complex signs and reason with it
 - Response from OpenAI GPT-4V: The image shows a complex array of parking signs with various restrictions:
@@ -218,14 +218,14 @@ Note that the emphasis in the responses given below are mine.
 
         Therefore, you should be able to park at this location at 2 PM on a Saturday without violating the restrictions shown. However, always be sure to observe any other possible restrictions that may not be visible in the image or any temporary restrictions that may be in place.
 
-### Example: unreasonable traffic sign
+### Case: unreasonable traffic sign
 ![speed limit 0](images/speed_limit_0.png)
 - Notes: test whether system has the commonsense to no obey unreasonable traffic sign
 - Response from OpenAI GPT-4V: The image appears to show a speed limit sign with the number "0" on it. This sign is not practical for normal traffic conditions since a speed limit of "0" miles per hour would mean no movement is allowed. This could be a sign that has been altered for humorous purposes or represents an artistic or symbolic message rather than an actual traffic control device.
 
     In a real-world scenario, if you encounter a sign that you believe is incorrect or seems to be a mistake, you should not follow it literally. Instead, drive at a speed that is safe for the road conditions and in accordance with the typical legal speed limits for the area, while seeking further clarification from local traffic authorities if possible.
 
-### Example: standing water or sink hole?
+### Case: standing water or sink hole?
 ![standing water](images/oil_slick.jpeg)
 - Notes: somehow GPT-4V sees the hazard as a sinkhole. I initially thought that it is a puddle of water, and only after very careful examination that I had to agree that GPT-4V was right after all. 
 - Response from OpenAI GPT-4V: In this image, we see a road that has been severely compromised by a sinkhole, which is a significant road hazard. Here's how to address this situation:
@@ -236,7 +236,7 @@ Note that the emphasis in the responses given below are mine.
     - Report the Hazard: Inform the local authorities about the road hazard so that they can take appropriate actions to repair the road and set up warnings for other drivers.
     - Alert Other Drivers: If you have a way to warn other drivers, such as hazard lights or if you can place warning devices at a safe distance before the hazard, do so to prevent others from approaching the danger.
 
-### Example: uncommon traffic sign
+### Case: uncommon traffic sign
 ![uncommon traffic sign](images/low_salt.jpeg)
 - Notes: this is an uncommon traffic sign, meant to test the system breath of knowledge without further training.
 - Response from OpenAI GPT-4V: The image displays a traffic sign indicating "LOW SALT AREA NEXT 9 MILES." This sign warns drivers that for the next nine miles, the road will not be treated with as much road salt as might normally be expected in icy or snowy conditions.
@@ -253,7 +253,7 @@ Note that the emphasis in the responses given below are mine.
 
     Always heed local advisories and be prepared for changing road conditions, especially in areas known for less road treatment during winter weather events.
 
-### Example: inflatable minion on road 
+### Case: inflatable minion on road 
 ![inflatable](images/inflatable.png)
 - Notes: this tests if system knows how to respond to unusual and unique road hazard.
 - Response from OpenAI GPT-4V: The image shows an oversized inflatable object, which appears to be a large minion character, obstructing the roadway. This is a unique and unexpected road hazard.
@@ -276,7 +276,7 @@ Note that the emphasis in the responses given below are mine.
 
     In this scenario, the priority is to avoid contributing to potential accidents by staying alert and prepared for sudden stops. If safe to do so, reporting the hazard to the proper authorities would also be advisable so they can remove the obstruction and restore normal traffic flow.
 
-### Example: dangling wire 
+### Case: dangling wire 
 ![dangling wire](images/electrical.jpg)
 - Notes: testing the recognition of the barely visible dangling wire, and the potential hazard that it poses.
 - Response from OpenAI GPT-4V: The image shows a street light or traffic signal that has become dislodged and is hanging low over the roadway, posing a significant hazard. This is especially dangerous at night when visibility is reduced.
@@ -299,7 +299,7 @@ Note that the emphasis in the responses given below are mine.
 
     Always maintain a safe following distance to allow time for sudden stops, and be ready to react to the actions of drivers ahead who may also be responding to the hazard.
 
-### Example: single knocked-over traffic cone
+### Case: single knocked-over traffic cone
 ![knocked over traffic cone](images/cone_single_knocked_over.jpg)
 - Notes: testing whether this system has the commonsense to go around a single knocked-over traffic cone, which likely is not meant as a sign to block vehicles
 - Response from OpenAI GPT-4V: The image displays a traffic cone that has been knocked over onto the road. While it may not block the path entirely, it still poses a potential hazard to drivers.
@@ -318,7 +318,7 @@ Note that the emphasis in the responses given below are mine.
 
     If it's safe to do so, reporting the fallen cone to local authorities or road maintenance can help ensure the hazard is addressed and the cone is put back in place or removed as necessary.
 
-### Example: traffic cones in a corner
+### Case: traffic cones in a corner
 ![traffic cones in a conrner](images/cones_on_the_side.jpeg)
 - Notes: testing whether this system will get confused by some traffic cones placed in a corner 
 - Response from OpenAI GPT-4V: The image shows three traffic cones placed on a paved area next to a parked red car. This setting suggests a controlled environment, perhaps a driveway or a private parking area.
@@ -331,7 +331,7 @@ Note that the emphasis in the responses given below are mine.
 
     In this context, no specific action is needed since the car is parked. However, if the driver intends to move the car, they should remove the cones before doing so to prevent driving over them. It's also important to ensure that moving the cones is permissible, as they might be there for a specific reason, such as roadwork nearby or to cordon off a restricted
 
-### Example: adversarial traffic sign
+### Case: adversarial traffic sign
 ![adversarial](images/adversarial.jpg)
 - Notes: this is an [adversarial traffic sign designed by University of Washington in 2018](https://arxiv.org/pdf/1707.08945.pdf), which was reported to cause a driverless car to misread it as a '45' speed limit sign. GPT-4V fully recognizes what it really is, and suggested proper action.
 - Response from OpenAI GPT-4V: The image displays a modified stop sign that has been altered to include the words "LOVE" and "HATE," creating a message that reads "LOVE STOP HATE." This alteration is a form of statement or public art and is not an official traffic sign.
@@ -340,7 +340,7 @@ Note that the emphasis in the responses given below are mine.
 
     For traffic safety, it is crucial that official road signs remain unaltered and clearly legible to prevent any misunderstandings on the road. **If you come across a sign like this while driving, follow the traffic rules that apply to standard stop signs** while also being aware of the possibility of other drivers being distracted or confused by the unconventional message.
 
-### Example: Back to the Future
+### Case: Back to the Future
 ![back to the future](images/delorean.jpeg)
 - Notes: this tests whether system can recognize a fantasy scene and react accordingly.
 - Response from OpenAI GPT-4V: This image appears to be a digitally manipulated or staged photo depicting a car that resembles the DeLorean time machine from the "Back to the Future" movie franchise, seemingly floating or flying above the ground.
@@ -349,7 +349,7 @@ Note that the emphasis in the responses given below are mine.
 
     For any "Back to the Future" fans, it's a fun and imaginative picture, but on the road, always adhere to traffic laws and the capabilities of real-world vehicles.
 
-### Example: wrong way
+### Case: wrong way
 ![wrong way](images/wrong_way.png)
 - Notes: initially GPT-4v did not spot the car going the wrong way, but subsequent queries show that it has no problem picking up many details of the car, and recommended the correct action.
 - Response from OpenAI GPT-4V: Recommendation: Maintain a cautious speed and prepare to slow down if necessary.
@@ -367,7 +367,7 @@ Note that the emphasis in the responses given below are mine.
 
         This is an immediate hazard, and utmost caution is required to avoid an accident.
 
-### Example: nearly invisible overturned trailer
+### Case: nearly invisible overturned trailer
 ![invisible truck](images/invisible_truck.jpeg)
 - Notes: testing whether system can detect an overturned trailer that is almost featureless
 - Response from OpenAI GPT-4V: The image shows an overturned semi-truck that has resulted in its trailer lying across the roadway, creating a complete road blockage. This is an immediate and severe traffic hazard.
@@ -389,7 +389,7 @@ Note that the emphasis in the responses given below are mine.
     In situations like this, it is crucial to remain patient and wait for professionals to handle the situation. They will determine the best course of action for clearing the roadway and redirecting traffic.
 
 <!--
-### Example: 
+### Case: 
 ![](images/)
 - Notes: 
 - Response from OpenAI GPT-4V: 
