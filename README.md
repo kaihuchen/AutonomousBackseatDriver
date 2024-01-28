@@ -268,7 +268,7 @@ Note that the emphasis in the responses below are mine.
     In this scenario, the priority is to avoid contributing to potential accidents by staying alert and prepared for sudden stops. If safe to do so, reporting the hazard to the proper authorities would also be advisable so they can remove the obstruction and restore normal traffic flow.
 
 ### Example: dangling wire 
-![dangling wire](images/)
+![dangling wire](images/electrical.jpg)
 - Notes: testing the recognition of the barely visible dangling wire, and the potential hazard that it poses.
 - Response from OpenAI GPT-4: The image shows a street light or traffic signal that has become dislodged and is hanging low over the roadway, posing a significant hazard. This is especially dangerous at night when visibility is reduced.
 
