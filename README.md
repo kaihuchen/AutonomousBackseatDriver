@@ -1,5 +1,9 @@
 # Autonomous Backseat Driver
 
+(Title by Google Bard)
+
+Autonomous cars get commonsense! Multimodal LLM handles crazy road situations like Godzilla, flying cars, and more!
+
 ## Summary
 * Our tests show that multimodal LLM, such as OpenAI's GPT-4V, can be used as a viable solution to endow autonomous vehicles with the commonsense needed to handle many outlier scenarios properly.
 * Multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [Standing water or sink hole](#user-content-example-standing-water-or-sink-hole))
@@ -22,6 +26,8 @@ Multimodal Generative AI, such as the OpenAI GPT-4V or Google Gemini, can be use
 We emphasize the **commonsense** aspect here because any AI device that operates in the open world must handle infinite number of scenarios, and only generative AI trained on massive amount of data has the chance of handling this properly. 
 
 Our goal here is to test the target multimodal models with many outlier cases in order to probe the target model's commonsense ability. In other words, the target model needs to draw from a wide range of world knowledge in order to reach appropriate response. If a model can pass most of the given test cases, then perhaps we can be certain that using such a model in autonomous vehicles is feasible and truely beneficial. 
+
+For the purpose of this study, issues regarding the cost and efficiency are intentionally ignored.
 
 ## Live Demo
 A live demo named [Autonomouse Backseat Driver](https://github.com/kaihuchen/AutonomousBackseatDriver) is made available as a Custom GPT in OpenAI's GPTs Store.
