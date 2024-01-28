@@ -2,16 +2,16 @@
 
 (Title by Google Bard)
 
-Autonomous cars get commonsense! Multimodal LLM handles crazy road situations like tornado, Godzilla, flying car, adversarial traffic sign, and more!
+Autonomous cars get common sense! Multimodal LLM handles crazy road situations like tornado, Godzilla, flying car, adversarial traffic sign, and more!
 
 ## Summary
-* Our tests show that multimodal LLMs, such as OpenAI's GPT-4V, can be used as a viable solution to endow autonomous vehicles with the commonsense needed to handle many outlier scenarios in the open world.
+* Our tests show that multimodal LLMs, such as OpenAI's GPT-4V, can be used as a viable solution to endow autonomous vehicles with the common sense needed to handle many outlier scenarios in the open world.
 * Multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [standing water or sink hole](#user-content-case-standing-water-or-sink-hole))
 * Overall the GPT-4V model has performed very well in the following scenarios:
     * Distinguishing fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
     * Recognizing tornado on a billboard commercial as false positive, while a tornado alert on a digital display is correctly identified as true warning.
     * Spotting pedestrian in crosswalk under low light situation.
-    * Read and fully understand complex signs with lots of text, including non-driving signs such as the [smash and grab](#user-content-case-complex-sign-with-social-warnings) case.
+    * Reading and fully understanding complex signs with lots of text, including non-driving signs such as the [smash and grab](#user-content-case-complex-sign-with-social-warnings) case.
     * Reasoning against complex signs and answer interactive query correctly (see case [too many signs](#user-content-case-too-many-signs))
     * Ignoring impossible road sign (such as speed limit of 0)
     * Understanding uncommon warning signs (such as the 'low salt' sign)
@@ -227,7 +227,7 @@ Note that the emphasis in the responses given below are mine.
 
 ### Case: unreasonable traffic sign
 ![speed limit 0](images/speed_limit_0.png)
-- Notes: test whether system has the commonsense to no obey unreasonable traffic sign
+- Notes: test whether system has the common sense to no obey unreasonable traffic sign
 - Response from OpenAI GPT-4V: The image appears to show a speed limit sign with the number "0" on it. This sign is not practical for normal traffic conditions since a speed limit of "0" miles per hour would mean no movement is allowed. This could be a sign that has been altered for humorous purposes or represents an artistic or symbolic message rather than an actual traffic control device.
 
     In a real-world scenario, if you encounter a sign that you believe is incorrect or seems to be a mistake, you should not follow it literally. Instead, drive at a speed that is safe for the road conditions and in accordance with the typical legal speed limits for the area, while seeking further clarification from local traffic authorities if possible.
@@ -308,7 +308,7 @@ Note that the emphasis in the responses given below are mine.
 
 ### Case: single knocked-over traffic cone
 ![knocked over traffic cone](images/cone_single_knocked_over.jpg)
-- Notes: testing whether this system has the commonsense to go around a single knocked-over traffic cone, which likely is not meant as a sign to block vehicles
+- Notes: testing whether this system has the common sense to go around a single knocked-over traffic cone, which likely is not meant as a sign to block vehicles
 - Response from OpenAI GPT-4V: The image displays a traffic cone that has been knocked over onto the road. While it may not block the path entirely, it still poses a potential hazard to drivers.
 
     Hazards:
