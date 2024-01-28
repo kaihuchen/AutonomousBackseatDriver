@@ -48,12 +48,19 @@ You are welcome to go there to upload photo of a road scene, and the this Custom
 Following is a list of test cases, with the following tests parameters:
 
 * At this point we conduct the tests against GPT-4V only. Later we may also test it with Google Gemini, or other multimodal LLM if available. All models are tested as-is without any fine-tuning.
-* We use Autonomous Car as our test scenario, so test images are collected with this im mind. If successful, then it may indicate that applying this approach to other types of autonoumous vehicles such as drones or mobile robots are also worthwhile.
+* We use an Autonomous Car as our test scenario, so test images are collected with this in mind. If successful, then it may indicate that applying this approach to other types of autonomous vehicles such as drones or mobile robots are also worthwhile.
 
 Note that the emphasis in the responses given below are mine.
 
+<!--figure>
+  <img src="images/monster2.jpg" alt="Alt text">
+  <figcaption>Image caption</figcaption>
+</figure-->
+
 ### Case: monster ahead
 ![monster ahead](images/monster2.jpg)
+[Image credit: Sean C Davis]()
+
 - Notes: extremely unusual scene. Testing sense of reality.
 - Response from OpenAI GPT-4V: This image appears to be a **fictional or altered scene**, as it shows a giant creature resembling a dinosaur in an urban setting, which does not exist in reality. In the context of the scenario you've asked me to provide advice on, **if this were a real situation**, it would constitute an extreme hazard.
 
@@ -394,6 +401,13 @@ Note that the emphasis in the responses given below are mine.
     - Report the Incident: If it appears that the authorities are not yet aware of the accident, call emergency services to report the location and nature of the hazard.
 
     In situations like this, it is crucial to remain patient and wait for professionals to handle the situation. They will determine the best course of action for clearing the roadway and redirecting traffic.
+
+### Case: camels
+![camels](images/camels.jpg)
+- Notes: unsafe and unusual road condition with many large animals nearby. Testing system's awareness of the danger when there are many large animals nearby.
+- Response from OpenAI GPT-4V: Recommendation: Stop the vehicle and wait.
+
+   Explanation: The road is occupied by a caravan of camels, which is an unusual and unpredictable obstacle. Camels can be large and intimidating animals, and they can cause significant damage to a vehicle if struck. Additionally, there are people accompanying the camels who are also at risk if the vehicle attempts to pass. It is safest to stop the vehicle at a safe distance and wait for the camels and their handlers to clear the road. If necessary, engage with the handlers from a safe distance to determine if there is a recommended action to take, but do not attempt to pass the animals without clear guidance. Proceed with caution once the road is clear.
 
 <!--
 ### Case: 
