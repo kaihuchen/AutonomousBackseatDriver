@@ -6,7 +6,7 @@ Autonomous cars get commonsense! Multimodal LLM handles crazy road situations li
 
 ## Summary
 * Our tests show that multimodal LLMs, such as OpenAI's GPT-4V, can be used as a viable solution to endow autonomous vehicles with the commonsense needed to handle many outlier scenarios in the open world.
-* Multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [Standing water or sink hole](#user-content-case-standing-water-or-sink-hole))
+* Multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [standing water or sink hole](#user-content-case-standing-water-or-sink-hole))
 * Overall the GPT-4V model has performed very well in the following scenarios:
     * Distinguishing fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
     * Recognizing false positives such as a tornado on a billboard commercial, while a true warning sign such as the tornado alert on a digital display is correctly identified.
@@ -33,7 +33,7 @@ Our goal here is to test the target multimodal models with many outlier cases in
 For the purpose of this study, issues such as cost and efficiency are intentionally ignored.
 
 ## Live Demo
-A live demo named [Autonomouse Backseat Driver](https://github.com/kaihuchen/AutonomousBackseatDriver) is made available as a Custom GPT in OpenAI's GPTs Store.
+A live demo named [Autonomouse Backseat Driver](https://chat.openai.com/g/g-e4IV3KhGm-autonomous-backseat-driver) is made available as a Custom GPT in OpenAI's GPTs Store.
 
 We named this Custom GPT **Autonomous Backseat Driver**, because we expect this component to offer only higher-level advices to the vehicle, while leaving the low-level controls to other components, kind of like a backseat passenger offering plenty of suggestions but controls nothing.
 
