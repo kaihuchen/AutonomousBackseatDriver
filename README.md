@@ -2,23 +2,26 @@
 
 (Title by Google Bard)
 
-Autonomous cars get commonsense! Multimodal LLM handles crazy road situations like Godzilla, flying cars, adversarial traffic signs, and more!
+Autonomous cars get commonsense! Multimodal LLM handles crazy road situations like tornado, Godzilla, flying car, adversarial traffic sign, and more!
 
 ## Summary
-* Our tests show that multimodal LLMs, such as OpenAI's GPT-4V, can be used as a viable solution to endow autonomous vehicles with the commonsense needed to handle many outlier scenarios properly in the open world.
+* Our tests show that multimodal LLMs, such as OpenAI's GPT-4V, can be used as a viable solution to endow autonomous vehicles with the commonsense needed to handle many outlier scenarios in the open world.
 * Multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [Standing water or sink hole](#user-content-case-standing-water-or-sink-hole))
-* Overall the GPT-4V model has performed extremely well, and succeeded at the following:
+* Overall the GPT-4V model has performed very well in the following scenarios:
     * Distinguishing fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
-    * Recognizing false positives such as a tornado on a billboard commercial, or a true warning sign such as the tornado alert on a digital display.
+    * Recognizing false positives such as a tornado on a billboard commercial, while a true warning sign such as the tornado alert on a digital display is correctly identified.
     * Spotting pedestrian in crosswalk under low light situation.
     * Read and fully understand complex traffic sign with lots of text.
-    * Reason against complex signs and answer query correctly (see case [too many signs](#kaihuchen/AutonomousBackseatDriver/edit/main/README.md))
-    * Ignore impossible road sign (such as speed limit of 0)
-    * Understand uncommon warning signs (such as the 'low salt' sign)
-    * Appropriate handling of unusual hazard (e.g., giant inflatable object blocking road, dangling electrical wire, car driving wrong way, nearly invisible overturned trailer, etc.)
-    * Work around doubtful traffic sign (such as singular knock-over traffic cone)
+    * Reasoning against complex signs and answer interactive query correctly (see case [too many signs](#user-content-case-too-many-signs))
+    * Ignoring impossible road sign (such as speed limit of 0)
+    * Understanding uncommon warning signs (such as the 'low salt' sign)
+    * Appropriate handling of unusual hazard (e.g., giant inflatable object blocking road, dangling electrical wire, nearly invisible overturned trailer, etc.)
+    * Working around doubtful traffic sign (such as a singular knocked-over traffic cone)
     * Doesn't get distracted by inconsequential traffic signs (e.g., traffic cones in a corner)
-    * Dose not get confused by adversarial traffic signs.
+    * Doesn't get confused by adversarial traffic signs.
+* Following are cases where GPT-4V has performed less than stellar:
+    * In the [lane closure](#user-content-case-lane-closure) case, GPT-4V mistakenly indicated that the **right lane** was closed when it should be the **left lane**. 
+    * In the [wrong way](#user-content-case-wrong-way) case, GPT-4V has failed to spot that there is a car driving in the wrong direction in its initial response. However, further interactive queries with GPT-4V shows that it has no problem locating the car in question, giving detail description, and suggesting appropriate actions.
 
 ## Background
 Multimodal Generative AI, such as the OpenAI GPT-4V or Google Gemini, can be used to provide **high-level commonsense suggestions** and detailed explanations to autonomous vehicles operating in the **open world**. This is not about lower-level controls like lane following, navigation, or parking, but about assessing the overall situation and providing appropriate advice.
@@ -34,14 +37,18 @@ A live demo named [Autonomouse Backseat Driver](https://github.com/kaihuchen/Aut
 
 We named this Custom GPT **Autonomous Backseat Driver**, because we expect this component to offer only higher-level advices to the vehicle, while leaving the low-level controls to other components, kind of like a backseat passenger offering plenty of suggestions but controls nothing.
 
+The cases given below are tested using this Custom GPT, which is designed with the following prompt:
+
+    Imagine that you are the driver of a car. The forward camera is showing the given image. Based on this image please make a recommendation on whether to speed up, maintain speed, turn around, or just advise user to pay special attention. If there are more than one plausible and serious hazards, report them all to the user. Also explain your recommendation.
+
 You are welcome to go there to upload photo of a road scene, and the this Custom GPT will then return high-level driving suggestions along with an explanation. If you have any comments, please leave them on the issues section for this repository.
 
 ## Test Cases
 
 Following is a list of test cases, with the following tests parameters:
 
-* At this point we conduct the tests against GPT-4V. Later we may also test it with Google Gemini. All models tested are as-is without any fine-tuning.
-* We use Autonomous Car as our test scenario. If successful, then it may indicate that applying this approach to other types of autonoumous vehicles such as drones or mobile robots are also worthwhile.
+* At this point we conduct the tests against GPT-4V only. Later we may also test it with Google Gemini, or other multimodal LLM if available. All models are tested as-is without any fine-tuning.
+* We use Autonomous Car as our test scenario, so test images are collected with this im mind. If successful, then it may indicate that applying this approach to other types of autonoumous vehicles such as drones or mobile robots are also worthwhile.
 
 Note that the emphasis in the responses given below are mine.
 
