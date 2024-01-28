@@ -2,7 +2,20 @@
 
 # Summary
 * Our tests show that multimodal LLM, such as OpenAI's GPT-4V, can be used as a viable solution to endow autonomous vehicles with the commonsense needed to handle many outlier scenarios properly.
-* Multimodal LLM supports interactive query, which is invaluable when the test case is complicated or confusing (see this case [Standing water or sink hole](#user-content-example-standing-water-or-sink-hole))
+* Multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [Standing water or sink hole](#user-content-example-standing-water-or-sink-hole))
+* Overall the GPT-4V model has performed extremely well, and succeeded at the following:
+    * Distinguishing fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
+    * Recognizing false positives such as a tornado on a billboard commercial, or a true warning sign such as the tornado alert on a digital display.
+    * Spotting pedestrian in crosswalk under low light situation.
+    * Read and fully understand complex sign with many words.
+    * Reason against complex signs and answer query correctly (see case [too many signs](#kaihuchen/AutonomousBackseatDriver/edit/main/README.md))
+    * Ignore impossible road sign (such as speed limit of 0)
+    * Understand uncommon warning signs (such as the 'low salt' sign)
+    * Appropriate handling of unusual hazard (e.g., giant inflatable object blocking road, dangling electrical wire, car driving wrong way, nearly invisible overturned trailer, etc.)
+    * Work around doubtful traffic sign (such as singular knock-over traffic cone)
+    * Doesn't get distracted by inconsequential traffic signs (e.g., traffic cones in a corner)
+    * Dose not get confused by adversarial traffic signs.
+
 
 # Background
 Multimodal Generative AI, such as the OpenAI GPT-4V or Google Gemini, can be used to provide **high-level commonsense suggestions** and detailed explanations to autonomous vehicles operating in the **open world**. This is not about lower-level controls like lane following, navigation, or parking, but about assessing the overall situation and providing appropriate advice.
@@ -349,7 +362,7 @@ Note that the emphasis in the responses given below are mine.
 
         This is an immediate hazard, and utmost caution is required to avoid an accident.
 
-### Example: invisible truck
+### Example: nearly invisible overturned trailer
 ![invisible truck](images/invisible_truck.jpeg)
 - Notes: testing whether system can detect an overturned trailer that is almost featureless
 - Response from OpenAI GPT-4V: The image shows an overturned semi-truck that has resulted in its trailer lying across the roadway, creating a complete road blockage. This is an immediate and severe traffic hazard.
