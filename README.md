@@ -4,7 +4,7 @@ Multimodal Generative AI, such as the OpenAI GPT-4V or Google Gemini, can be use
 Why emphasizing **commonsense** here? This is because any AI device that operates in the open world must handle infinite number of scenarios, and only generative AI trained on massive amount of data has the chance of handling this properly. 
 
 ## Live Demo
-A live demo named [Autonomouse Backseat Driver](https://github.com/kaihuchen/AutonomousBackseatDriver) is made available as a Custom GPT through OpenAI's GPTs Store.
+A live demo named [Autonomouse Backseat Driver](https://github.com/kaihuchen/AutonomousBackseatDriver) is made available as a Custom GPT in OpenAI's GPTs Store.
 
 We named this Custom GPT **Autonomous Backseat Driver**, because we expect this component to offer only higher-level advices to the vehicle, while leaving the low-level controls to other components, kind of like a backseat passenger offering plenty of suggestions but controls nothing.
 
@@ -14,12 +14,12 @@ You are welcome to go there to upload photo of a road scene, and the this Custom
 
 Following is a list of test cases, collected here to achieve the following:
 
-* Each is designed an outlier case to test the target model's commonsense ability 
-* There are endless situation on the open road that need to be handled well by any autonomous vehicle.
-* There are many confusing situations that require some level of commonsense reasoning in order to reach good decision.
-* Important decisions should be explained.
+* At this point we conduct the tests against GPT-4V. Later we may also test it with Google Gemini. All models tested are as-is without any fine-tuning.
+* We use Autonomous Car as our test scenario. If successful, then it indicates that testing with other types of autonoumous vehicles such as drones or mobile robots might be worthwhile.
+* Each test case is designed as an outlier case to probe the target model's commonsense ability. In other words, the target model needs to draw from a wide range of world knowledge in order to reach appropriate response.
+* Model's should explain its response.
 
-Note that the emphasis in the responses below are mine.
+Note that the emphasis in the responses given below are mine.
 
 ### Example: Monster ahead
 ![monster ahead](images/monster2.jpg)
@@ -157,7 +157,7 @@ Note that the emphasis in the responses below are mine.
 
 ### Example: lane closure
 ![lane closure](images/traffice_cones.jpg)
-- Notes: test road condition that requires caution. GPT-4 seems to recognize the **wrong lane** as closed.
+- Notes: test road condition that requires caution. GPT-4V seems to recognize the **wrong lane** as closed.
 - Response from OpenAI GPT-4: In this image, we see a road maintenance operation underway, with the **right lane** closed off by traffic cones and maintenance vehicles present.
 
     Hazards:
@@ -203,7 +203,7 @@ Note that the emphasis in the responses below are mine.
 
 ### Example: standing water or sink hole?
 ![standing water](images/oil_slick.jpeg)
-- Notes: somehow GPT-4 sees the hazard as a sinkhole. I initially thought that it is a puddle of water, and only after very careful examination that I had to agree that GPT-4 was right after all. 
+- Notes: somehow GPT-4V sees the hazard as a sinkhole. I initially thought that it is a puddle of water, and only after very careful examination that I had to agree that GPT-4V was right after all. 
 - Response from OpenAI GPT-4: In this image, we see a road that has been severely compromised by a sinkhole, which is a significant road hazard. Here's how to address this situation:
 
     - Stop the Vehicle: Immediately reduce your speed and come to a stop at a safe distance from the sinkhole.
@@ -309,8 +309,8 @@ Note that the emphasis in the responses below are mine.
 
 ### Example: adversarial traffic sign
 ![adversarial](images/adversarial.jpg)
-- Notes: this is an [adversarial traffic sign designed by University of Washington in 2018](https://arxiv.org/pdf/1707.08945.pdf), which was reported to cause a driverless car to misread it as a '45' speed limit sign. GPT-4 fully recognizes what it really is, and suggested proper action.
-- Response from OpenAI GPT-4: The image displays a modified stop sign that has been altered to include the words "LOVE" and "HATE," creating a message that reads "LOVE STOP HATE." This alteration is a form of statement or public art and is not an official traffic sign.
+- Notes: this is an [adversarial traffic sign designed by University of Washington in 2018](https://arxiv.org/pdf/1707.08945.pdf), which was reported to cause a driverless car to misread it as a '45' speed limit sign. GPT-4V fully recognizes what it really is, and suggested proper action.
+- Response from OpenAI GPT-4V: The image displays a modified stop sign that has been altered to include the words "LOVE" and "HATE," creating a message that reads "LOVE STOP HATE." This alteration is a form of statement or public art and is not an official traffic sign.
 
     While the original intent of the sign is to instruct drivers to come to a complete stop, the added text transforms it into a message likely intended to promote love and end hate. If this sign is placed on a road, it could potentially confuse drivers due to the additional text. However, the primary function of the stop sign, indicated by its shape and color, is still clear: drivers should come to a complete stop at the sign.
 
