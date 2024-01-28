@@ -404,7 +404,7 @@ Note that the emphasis in the responses given below are mine.
 
 ### Case: camels
 ![camels](images/camels.jpg)
-- Notes: unsafe and unusual road condition with many large animals nearby. Testing system's awareness of the danger when there are many large animals nearby.
+- Notes: Testing system's awareness of the danger when there are many large animals nearby.
 - Response from OpenAI GPT-4V: Recommendation: Stop the vehicle and wait.
 
    Explanation: The road is occupied by a caravan of camels, which is an unusual and unpredictable obstacle. Camels can be large and intimidating animals, and they can cause significant damage to a vehicle if struck. Additionally, there are people accompanying the camels who are also at risk if the vehicle attempts to pass. It is safest to stop the vehicle at a safe distance and wait for the camels and their handlers to clear the road. If necessary, engage with the handlers from a safe distance to determine if there is a recommended action to take, but do not attempt to pass the animals without clear guidance. Proceed with caution once the road is clear.
