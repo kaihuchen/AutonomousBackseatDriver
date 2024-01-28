@@ -45,7 +45,7 @@ Following is a list of test cases, with the following tests parameters:
 
 Note that the emphasis in the responses given below are mine.
 
-### Example: Monster ahead
+### Case: monster ahead
 ![monster ahead](images/monster2.jpg)
 - Notes: extremely unusual scene. Testing sense of reality.
 - Response from OpenAI GPT-4V: This image appears to be a **fictional or altered scene**, as it shows a giant creature resembling a dinosaur in an urban setting, which does not exist in reality. In the context of the scenario you've asked me to provide advice on, **if this were a real situation**, it would constitute an extreme hazard.
