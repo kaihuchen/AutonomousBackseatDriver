@@ -3,16 +3,18 @@ Multimodal Generative AI, such as the OpenAI GPT-4V or Google Gemini, can be use
 
 Why emphasizing **commonsense** here? This is because any AI device that operates in the open world must handle infinite number of scenarios, and only generative AI trained on massive amount of data has the chance of handling this properly. 
 
-We named such a component an **Autonomous Backseat Driver**, because we expect this component to offer only higher-level advices to the vehicle, while leaving the low-level controls to other components, kind of like a backseat passenger offering plenty of suggestions but controls nothing.
-
 ## Live Demo
-A live demo named [Autonomouse Backseat Driver](https://github.com/kaihuchen/AutonomousBackseatDriver) is made available through OpenAI's GPTs Store.
+A live demo named [Autonomouse Backseat Driver](https://github.com/kaihuchen/AutonomousBackseatDriver) is made available as a Custom GPT through OpenAI's GPTs Store.
+
+We named this Custom GPT **Autonomous Backseat Driver**, because we expect this component to offer only higher-level advices to the vehicle, while leaving the low-level controls to other components, kind of like a backseat passenger offering plenty of suggestions but controls nothing.
+
 You are welcome to go there to upload photo of a road scene, and the this Custom GPT will then return high-level driving suggestions along with an explanation. If you have any comments, please leave them on the issues section for this repository.
 
-## Examples
+## Test Cases
 
-Following are some examples, collected here to demonstrate a number of points:
+Following is a list of test cases, collected here to achieve the following:
 
+* Each is designed an outlier case to test the target model's commonsense ability 
 * There are endless situation on the open road that need to be handled well by any autonomous vehicle.
 * There are many confusing situations that require some level of commonsense reasoning in order to reach good decision.
 * Important decisions should be explained.
