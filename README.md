@@ -2,7 +2,7 @@
 
 # Summary
 * Our tests show that multimodal LLM, such as OpenAI's GPT-4V, can be used as a viable solution to endow autonomous vehicles with the commonsense needed to handle many outlier scenarios properly.
-* 
+* Multimodal LLM supports interactive query, which is invaluable when the test case is complicated or confusing (see this case [Standing water or sink hole](#user-content-example-standing-water-or-sink-hole))
 
 # Background
 Multimodal Generative AI, such as the OpenAI GPT-4V or Google Gemini, can be used to provide **high-level commonsense suggestions** and detailed explanations to autonomous vehicles operating in the **open world**. This is not about lower-level controls like lane following, navigation, or parking, but about assessing the overall situation and providing appropriate advice.
@@ -23,7 +23,7 @@ You are welcome to go there to upload photo of a road scene, and the this Custom
 Following is a list of test cases, with the following tests parameters:
 
 * At this point we conduct the tests against GPT-4V. Later we may also test it with Google Gemini. All models tested are as-is without any fine-tuning.
-* We use Autonomous Car as our test scenario. If successful, then it indicates that applying this approach to other types of autonoumous vehicles such as drones or mobile robots are also worthwhile.
+* We use Autonomous Car as our test scenario. If successful, then it may indicate that applying this approach to other types of autonoumous vehicles such as drones or mobile robots are also worthwhile.
 
 Note that the emphasis in the responses given below are mine.
 
