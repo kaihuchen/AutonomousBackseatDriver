@@ -21,7 +21,7 @@ Multimodal Generative AI, such as the OpenAI GPT-4V or Google Gemini, can be use
 
 We emphasize the **commonsense** aspect here because any AI device that operates in the open world must handle infinite number of scenarios, and only generative AI trained on massive amount of data has the chance of handling this properly. 
 
-Our goals here is to test the target multimodal models with many outlier cases in order to probe the target model's commonsense ability. In other words, the target model needs to draw from a wide range of world knowledge in order to reach appropriate response. If a model can pass most of the given test cases, then perhaps we can be certain that using such a model in autonomous vehicles is feasible and truely beneficial. 
+Our goal here is to test the target multimodal models with many outlier cases in order to probe the target model's commonsense ability. In other words, the target model needs to draw from a wide range of world knowledge in order to reach appropriate response. If a model can pass most of the given test cases, then perhaps we can be certain that using such a model in autonomous vehicles is feasible and truely beneficial. 
 
 ## Live Demo
 A live demo named [Autonomouse Backseat Driver](https://github.com/kaihuchen/AutonomousBackseatDriver) is made available as a Custom GPT in OpenAI's GPTs Store.
