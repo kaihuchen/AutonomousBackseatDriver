@@ -9,9 +9,9 @@ Autonomous cars get commonsense! Multimodal LLM handles crazy road situations li
 * Multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [standing water or sink hole](#user-content-case-standing-water-or-sink-hole))
 * Overall the GPT-4V model has performed very well in the following scenarios:
     * Distinguishing fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
-    * Recognizing false positives such as a tornado on a billboard commercial, while a true warning sign such as the tornado alert on a digital display is correctly identified.
+    * Recognizing tornado on a billboard commercial as false positive, while a tornado alert on a digital display is correctly identified as true warning.
     * Spotting pedestrian in crosswalk under low light situation.
-    * Read and fully understand complex traffic sign with lots of text.
+    * Read and fully understand complex signs with lots of text, including non-driving signs such as the [smash and grab](#user-content-example-complex-sign-with-social-warnings) case.
     * Reasoning against complex signs and answer interactive query correctly (see case [too many signs](#user-content-case-too-many-signs))
     * Ignoring impossible road sign (such as speed limit of 0)
     * Understanding uncommon warning signs (such as the 'low salt' sign)
