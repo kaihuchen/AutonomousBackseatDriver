@@ -360,7 +360,7 @@ Note that the emphasis in the responses below are mine.
 
 ### Example: invisible truck
 ![invisible truck](images/invisible_truck.jpeg)
-- Notes: testing whether system can detect an overturned semi-truck that is almost featureless
+- Notes: testing whether system can detect an overturned tralier that is almost featureless
 - Response from OpenAI GPT-4: The image shows an overturned semi-truck that has resulted in its trailer lying across the roadway, creating a complete road blockage. This is an immediate and severe traffic hazard.
 
     Hazards:
