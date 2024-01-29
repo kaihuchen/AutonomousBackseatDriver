@@ -1,47 +1,46 @@
-# A Visual Benchmark for Testing Autonoumous Driving with Multimodal LLMs
-
+# A Visual Benchmark for Testing Multimodal LLMs on Autonoumous Driving for Common Sense
 This is part of a series of benchmarks intended for evaluating a given multimodal LLM (Large Language Model), regarding its effectiveness as a visual recognition component in a certain application domain.
 
-This particular benchmark evaluates the performance of autonomous driving systems in real-world scenarios, where common sense is required in order to handle the many outlier cases that are impossible to capture using the traditional computer vision approaches based on fixed categories.
+This particular benchmark is designed to test a multimodal LLM in the application domain of real-world autonomous driving, where the LLM in question is asked to play the role of a driver, and come up with some recommended actions in response to the image of a given road scene.
+
+Most test cases in the benchmark depict atypical road scenes that are very hard to resolve using traditional computer vision that are trained on fixed categories. You can say that these test cases represent the **long tail cases** that traditional approaches failed to cover, and eventually will trip over on. 
+
+If a multimodal LLM is able to handle most of the test cases with flying colors, then this LLM can be said to possess broad real-world commonsense knowledge, and then it has a much better chance of doing well in our infinitely complex and confusing real world.
+
+## Test Parameters
+* The test results listed below are mainly derived using OpenAI's GPT-4V model. At this time results from Googel Bard/Gemini are much more limited, due to problem where Bard/Gemini often refuse to process a given image. 
+* The LLMs in question here are meant for providing **high-level commonsense suggestions** and detailed explanations to autonomous vehicles operating in the **open world**. This is not for lower-level controls like lane following, navigation, or parking, but about assessing the overall situation and providing appropriate advice. 
+* For the purpose of this study, issues such as cost and efficiency are intentionally ignored.
+* Note that multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [standing water or sink hole](#user-content-case-standing-water-or-sink-hole))
 
 ## Summary
-* Our tests show that multimodal LLMs, such as OpenAI's GPT-4V, can be used as a viable solution to endow autonomous vehicles with the common sense needed to handle many outlier scenarios in the open world.
-* Multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [standing water or sink hole](#user-content-case-standing-water-or-sink-hole))
-* Overall the GPT-4V model has performed very well in the following scenarios:
-    * Distinguishing fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
-    * Recognizing tornado on a billboard commercial as false positive, while a tornado alert on a digital display is correctly identified as true warning.
-    * Spotting pedestrian in crosswalk under low light situation.
-    * Reading and fully understanding complex signs with lots of text, including non-driving signs such as the [smash and grab](#user-content-case-complex-sign-with-social-warnings) case.
-    * Reasoning against complex signs and answer interactive query correctly (see case [too many signs](#user-content-case-too-many-signs))
-    * Ignoring impossible road sign (such as speed limit of 0)
-    * Understanding uncommon warning signs (such as the 'low salt' sign)
-    * Appropriate handling of unusual hazard (e.g., giant inflatable object blocking road, dangling electrical wire, nearly invisible overturned trailer, etc.)
-    * Working around doubtful traffic sign (such as a singular knocked-over traffic cone)
-    * Doesn't get distracted by inconsequential traffic signs (e.g., traffic cones in a corner)
-    * Doesn't get confused by adversarial traffic signs.
-* Following are cases where GPT-4V has performed less than stellar:
-    * In the [lane closure](#user-content-case-lane-closure) case, GPT-4V mistakenly indicated that the **right lane** was closed when it should be the **left lane**. 
-    * In the [wrong way](#user-content-case-wrong-way) case, GPT-4V has failed to spot that there is a car driving in the wrong direction in its initial response. However, further interactive queries with GPT-4V shows that it has no problem locating the car in question, giving detail description, and suggesting appropriate actions.
+Overall the GPT-4V model has performed very well in the following scenarios:
+* Distinguishing fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
+* Recognizing tornado on a billboard commercial as false positive, while a tornado alert on a digital display is correctly identified as true warning.
+* Spotting pedestrian in crosswalk under low light situation.
+* Reading and fully understanding complex signs with lots of text, including non-driving signs such as the [smash and grab](#user-content-case-complex-sign-with-social-warnings) case.
+* Reasoning against complex signs and answer interactive query correctly (see case [too many signs](#user-content-case-too-many-signs))
+* Ignoring impossible road sign (such as speed limit of 0)
+* Understanding uncommon warning signs (such as the 'low salt' sign)
+* Appropriate handling of unusual hazard (e.g., giant inflatable object blocking road, dangling electrical wire, nearly invisible overturned trailer, etc.)
+* Working around doubtful traffic sign (such as a singular knocked-over traffic cone)
+* Doesn't get distracted by inconsequential traffic signs (e.g., traffic cones in a corner)
+* Doesn't get confused by adversarial traffic signs.
 
-## Background
-Multimodal Generative AI, such as the OpenAI GPT-4V or Google Gemini, can be used to provide **high-level commonsense suggestions** and detailed explanations to autonomous vehicles operating in the **open world**. This is not about lower-level controls like lane following, navigation, or parking, but about assessing the overall situation and providing appropriate advice.
-
-We emphasize the **commonsense** aspect here because any AI device that operates in the open world must handle infinite number of scenarios, and only generative AI trained on massive amount of data has the chance of handling this properly. 
-
-Our goal here is to test the target multimodal models with many outlier cases in order to probe the target model's commonsense ability. In other words, we want to know if the model is able to draw from a wide range of world knowledge in order to reach appropriate response. If a model can pass most such test cases, then perhaps we can be certain that using such a model in autonomous vehicles is feasible and truely beneficial. 
-
-For the purpose of this study, issues such as cost and efficiency are intentionally ignored.
+Following are cases where GPT-4V has performed less than stellar:
+* In the [lane closure](#user-content-case-lane-closure) case, GPT-4V mistakenly indicated that the **right lane** was closed when it should be the **left lane**. 
+* In the [wrong way](#user-content-case-wrong-way) case, GPT-4V has failed to spot that there is a car driving in the wrong direction in its initial response. However, further interactive queries with GPT-4V shows that it has no problem locating the car in question, giving detail description, and suggesting appropriate actions.
 
 ## Live Demo
 A live demo named [Autonomouse Backseat Driver](https://chat.openai.com/g/g-e4IV3KhGm-autonomous-backseat-driver) is made available as a Custom GPT in OpenAI's GPTs Store.
 
-We named this Custom GPT **Autonomous Backseat Driver**, because we expect this component to offer only higher-level advices to the vehicle, while leaving the low-level controls to other components, kind of like a backseat passenger offering plenty of suggestions but controls nothing.
+We named this Custom GPT **Autonomous Backseat Driver**, because we expect this component to offer only higher-level advices to the vehicle, while leaving the low-level controls to other components, kind of like a backseat passenger who offers plenty of suggestions but controls nothing.
 
 The cases given below are tested using this Custom GPT, which is designed with the following prompt:
 
     Imagine that you are the driver of a car. The forward camera is showing the given image. Based on this image please make a recommendation on whether to speed up, maintain speed, turn around, or just advise user to pay special attention. If there are more than one plausible and serious hazards, report them all to the user. Also explain your recommendation.
 
-You are welcome to go there to upload photo of a road scene, and the this Custom GPT will then return high-level driving suggestions along with an explanation. If you have any comments, please leave them on the issues section for this repository.
+You are welcome to go to this Custom GPT to upload photo of a road scene, and the this Custom GPT will then return high-level driving suggestions along with an explanation. 
 
 ## Test Cases
 
@@ -412,6 +411,9 @@ Note that the emphasis in the responses given below are mine.
 ### Case: use closed lane
 ![use closed lane](images/use_closed_lane.png)
 - Notes: overhead traffic sign advises drivers to use a closed left lane. Testing system's ability to handle contradicting information
+- Comparison:
+    - Bard/Gemini incorrectly combines two separate signs into one to indicate **Major Accident 16". This is a worrying sign that it may not read text well.
+    - Bard/Gemini failed to point out that the displays "LEFT LANES CLOSED" and "USE LEFT LANE" are contradictory.
 - Response from OpenAI GPT-4V: The image shows an electronic road sign with a contradictory message. It reads "MAJOR ACCIDENT LEFT LANES CLOSED USE LEFT LANE." This message is confusing because it first instructs drivers that the left lanes are closed and then seemingly contradicts itself by telling drivers to use the left lane.
 
     Hazards:
@@ -427,6 +429,18 @@ Note that the emphasis in the responses given below are mine.
     - Stay Informed: Listen to local traffic radio stations or use a GPS with live traffic updates for more accurate information on the road conditions ahead.
 
     In a situation with conflicting information, it's important to rely on your judgment and observations of the actual road conditions and directions from on-site traffic authorities. If it becomes apparent that the message is indeed an error, reporting it to highway authorities can help prevent further confusion.
+- Response from OpenAI Bard/Gemini: Based on the image you sent, here are my recommendations:
+
+    - Slow down and proceed with caution. The image shows a sign that says "Major Accident 16" and "Left Lanes Closed." This indicates that there is a serious accident ahead on the left lanes of the highway. It is important to slow down and be prepared to stop, as there may be debris or emergency vehicles in the road.
+    - Move to the right lane if possible. The sign also says "Use Left Lane." This means that it is currently safe to use the left lane, but it is likely to become congested soon as traffic backs up from the accident. If you can safely move to the right lane, I recommend doing so to avoid getting stuck in traffic.
+    - Be aware of your surroundings and pay attention to other drivers. The accident may cause some drivers to slow down or stop suddenly, so it is important to be prepared to brake if necessary. You should also watch out for drivers who may be trying to change lanes or who may be rubbernecking at the accident.
+    
+    Here are some additional tips for driving safely in the vicinity of an accident:
+
+    - Do not stop or slow down to look at the accident. This can create a chain reaction of rear-end collisions.
+    - If you must slow down, do so gradually and brake smoothly.
+    - Turn on your hazard lights to let other drivers know that you are aware of the accident.
+    - Be patient and allow extra time for your trip. 
 
 
 <!--
@@ -436,3 +450,6 @@ Note that the emphasis in the responses given below are mine.
 - Response from OpenAI GPT-4V: 
 -->
 
+## In Conclusion
+
+If you have any comments, please leave them on the issues section for this repository.
