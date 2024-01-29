@@ -1,8 +1,8 @@
-# Autonomous Backseat Driver
+# A Visual Benchmark for Testing Autonoumous Driving with Multimodal LLMs
 
-(Title by Google Bard)
+This is part of a series of benchmarks intended for evaluating a given multimodal LLM (Large Language Model), regarding its effectiveness as a visual recognition component in a certain application domain.
 
-Autonomous cars get common sense! Multimodal LLM handles crazy road situations like tornado, Godzilla, flying car, adversarial traffic sign, and more!
+This particular benchmark evaluates the performance of autonomous driving systems in real-world scenarios, where common sense is required in order to handle the many outlier cases that are impossible to capture using the traditional computer vision approaches based on fixed categories.
 
 ## Summary
 * Our tests show that multimodal LLMs, such as OpenAI's GPT-4V, can be used as a viable solution to endow autonomous vehicles with the common sense needed to handle many outlier scenarios in the open world.
