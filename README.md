@@ -409,6 +409,26 @@ Note that the emphasis in the responses given below are mine.
 
    Explanation: The road is occupied by a caravan of camels, which is an unusual and unpredictable obstacle. Camels can be large and intimidating animals, and they can cause significant damage to a vehicle if struck. Additionally, there are people accompanying the camels who are also at risk if the vehicle attempts to pass. It is safest to stop the vehicle at a safe distance and wait for the camels and their handlers to clear the road. If necessary, engage with the handlers from a safe distance to determine if there is a recommended action to take, but do not attempt to pass the animals without clear guidance. Proceed with caution once the road is clear.
 
+### Case: use closed lane
+![use closed lane](images/use_closed_lane.png)
+- Notes: overhead traffic sign advises drivers to use a closed left lane. Testing system's ability to handle contradicting information
+- Response from OpenAI GPT-4V: The image shows an electronic road sign with a contradictory message. It reads "MAJOR ACCIDENT LEFT LANES CLOSED USE LEFT LANE." This message is confusing because it first instructs drivers that the left lanes are closed and then seemingly contradicts itself by telling drivers to use the left lane.
+
+    Hazards:
+
+    - Confusing Instructions: The sign's mixed message can cause confusion among drivers, potentially leading to erratic driving behavior or sudden lane changes.
+    - Possible Accident Ahead: The sign indicates there is a major accident, which is a hazard in itself.
+
+    Recommended Actions:
+
+    - Proceed with Caution: Regardless of the confusing message, slow down and be prepared for potential disruptions in the flow of traffic.
+    - Watch for Traffic Directions: Look for additional signs, traffic cones, or instructions from traffic officers which might clarify the correct course of action.
+    - Follow the Flow of Traffic: If the message on the sign is unclear, follow the movement of the traffic and any visual cues from the roadway to determine the correct lane to use.
+    - Stay Informed: Listen to local traffic radio stations or use a GPS with live traffic updates for more accurate information on the road conditions ahead.
+
+    In a situation with conflicting information, it's important to rely on your judgment and observations of the actual road conditions and directions from on-site traffic authorities. If it becomes apparent that the message is indeed an error, reporting it to highway authorities can help prevent further confusion.
+
+
 <!--
 ### Case: 
 ![](images/)
