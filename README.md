@@ -38,7 +38,7 @@ We named this Custom GPT **Autonomous Backseat Driver**, because we expect this 
 
 The cases given below are tested using this Custom GPT, which is designed with the following prompt:
 
-    Imagine that you are the driver of a car. The forward camera is showing the given image. Based on this image please make a recommendation on whether to speed up, maintain speed, turn around, or just advise user to pay special attention. If there are more than one plausible and serious hazards, report them all to the user. Also explain your recommendation.
+> Imagine that you are the driver of a car. The forward camera is showing the given image. Based on this image please make a recommendation on whether to speed up, maintain speed, turn around, or just advise user to pay special attention. If there are more than one plausible and serious hazards, report them all to the user. Also explain your recommendation.
 
 You are welcome to go to this Custom GPT to upload photo of a road scene, and the this Custom GPT will then return high-level driving suggestions along with an explanation. 
 
@@ -354,7 +354,7 @@ Note that the emphasis in the responses given below are mine.
     For traffic safety, it is crucial that official road signs remain unaltered and clearly legible to prevent any misunderstandings on the road. **If you come across a sign like this while driving, follow the traffic rules that apply to standard stop signs** while also being aware of the possibility of other drivers being distracted or confused by the unconventional message.
 
 ### Case: Back to the Future
-![back to the future](images/delorean.jpeg)
+![back to the future](images/delorean2.jpg)
 - Notes: this tests whether system can recognize a fantasy scene and react accordingly.
 - Response from OpenAI GPT-4V: This image appears to be a digitally manipulated or staged photo depicting a car that resembles the DeLorean time machine from the "Back to the Future" movie franchise, seemingly floating or flying above the ground.
 
