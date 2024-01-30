@@ -402,11 +402,13 @@ Note that the emphasis in the responses given below are mine.
     In situations like this, it is crucial to remain patient and wait for professionals to handle the situation. They will determine the best course of action for clearing the roadway and redirecting traffic.
 
 ### Case: camels
-![camels](images/camels.jpg)
+![camels](images/camels.png)
 - Notes: Testing system's awareness of the danger when there are many large animals nearby.
-- Response from OpenAI GPT-4V: Recommendation: Stop the vehicle and wait.
-
-   Explanation: The road is occupied by a caravan of camels, which is an unusual and unpredictable obstacle. Camels can be large and intimidating animals, and they can cause significant damage to a vehicle if struck. Additionally, there are people accompanying the camels who are also at risk if the vehicle attempts to pass. It is safest to stop the vehicle at a safe distance and wait for the camels and their handlers to clear the road. If necessary, engage with the handlers from a safe distance to determine if there is a recommended action to take, but do not attempt to pass the animals without clear guidance. Proceed with caution once the road is clear.
+- Response from OpenAI GPT-4V: 
+    
+    Recommendation: Reduce speed and prepare to stop.
+    
+    Explanation: There is a large group of camels occupying both lanes of the road ahead, and due to their number and the lack of alternative routes, it is not safe to attempt to pass. The best course of action is to slow down immediately and be prepared to come to a complete stop. Since this appears to be a controlled caravan crossing, observe the situation from a safe distance and wait for a signal or opportunity to pass safely. It’s important to be patient and cautious in this scenario to avoid causing distress to the animals or creating a hazardous situation.
 
 ### Case: use closed lane
 ![use closed lane](images/use_closed_lane.png)
@@ -414,6 +416,7 @@ Note that the emphasis in the responses given below are mine.
 - Comparison:
     - Bard/Gemini incorrectly combines two separate signs into one to indicate **Major Accident 16". This is a worrying sign that it may not read text well.
     - Bard/Gemini failed to point out that the displays "LEFT LANES CLOSED" and "USE LEFT LANE" are contradictory.
+    - GPT-4V performed well overall.
 - Response from OpenAI GPT-4V: The image shows an electronic road sign with a contradictory message. It reads "MAJOR ACCIDENT LEFT LANES CLOSED USE LEFT LANE." This message is confusing because it first instructs drivers that the left lanes are closed and then seemingly contradicts itself by telling drivers to use the left lane.
 
     Hazards:
@@ -429,7 +432,7 @@ Note that the emphasis in the responses given below are mine.
     - Stay Informed: Listen to local traffic radio stations or use a GPS with live traffic updates for more accurate information on the road conditions ahead.
 
     In a situation with conflicting information, it's important to rely on your judgment and observations of the actual road conditions and directions from on-site traffic authorities. If it becomes apparent that the message is indeed an error, reporting it to highway authorities can help prevent further confusion.
-- Response from OpenAI Bard/Gemini: Based on the image you sent, here are my recommendations:
+- Response from Google Bard/Gemini: Based on the image you sent, here are my recommendations:
 
     - Slow down and proceed with caution. The image shows a sign that says "Major Accident 16" and "Left Lanes Closed." This indicates that there is a serious accident ahead on the left lanes of the highway. It is important to slow down and be prepared to stop, as there may be debris or emergency vehicles in the road.
     - Move to the right lane if possible. The sign also says "Use Left Lane." This means that it is currently safe to use the left lane, but it is likely to become congested soon as traffic backs up from the accident. If you can safely move to the right lane, I recommend doing so to avoid getting stuck in traffic.
