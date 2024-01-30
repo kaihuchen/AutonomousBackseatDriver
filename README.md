@@ -90,7 +90,7 @@ Note that the emphasis in the responses given below are mine.
     It's also important to listen to weather alerts and have a plan for seeking shelter in case of severe weather like this. If you're in a region prone to tornadoes, keeping an emergency kit in your vehicle, including a first aid kit, water, food, and a portable weather radio, is advisable.
 
 ### Case: tornado on a commercial billboard 
-![downed trees](images/tornado_fake.png)
+![fake tornado](images/tornado_fake.png)
 - Notes: test distinction between real hazard and fictitious ones.
 - Response from OpenAI GPT-4V: The image shows a billboard advertising a place called "Naderville," which seems to be a reference to tornadoes, as indicated by the term 'nader, a colloquialism for "tornado." The billboard advertises "‘Nader Kits, Shelters and more," suggesting it is a business that sells emergency supplies and shelters for tornado protection.
 
@@ -149,17 +149,18 @@ Note that the emphasis in the responses given below are mine.
     - Use Headlights: Make sure your vehicle's headlights are on and properly adjusted to ensure maximum visibility without blinding other road users.
   
 ### Case: downed trees
-![downed trees](images/downed-trees.jpg)
+![downed trees](images/downed_trees.png)
 - Notes: severe road hazard
-- Response from OpenAI GPT-4V: In the image, there are several serious hazards present:
+- Response from OpenAI GPT-4V: 
 
-    Fallen Tree: A large tree has fallen across the road, completely blocking passage. This poses a direct physical barrier to vehicles.
+    Recommendation: Stop immediately and turn around if possible.
 
-    Downed Power Lines: The fallen tree has brought down power lines, which are potentially live and represent a significant electrocution risk.
+    Explanation: There is a fallen tree across the road, which is a clear and immediate hazard. This obstruction completely blocks the road, making it impassable. You should come to a safe stop and use the nearest opportunity to safely turn around, seeking an alternate route. It's also advisable to report this obstruction to the relevant authorities so they can clear the road or warn other drivers.
+- Follow-up Q&A:
+    - Q: it seems to me that the road is not completed blocked and is still passable. What do you think?
+    - A: Recommendation: Proceed with caution.
 
-    Road Debris: Smaller branches and debris from the tree are scattered across the road, posing additional risks for tire damage and vehicle stability.
-
-    The recommended action is to stop the vehicle at a safe distance from the fallen tree and downed power lines. Do not attempt to drive over or around the debris. Turning around and finding an alternate route would be the safest course of action. Additionally, it's crucial to alert the local authorities to the fallen tree and downed power lines so that they can safely clear the road and repair any damage. It's also important to warn other drivers of the hazard if possible.
+        Explanation: Upon closer examination, it appears that part of the road may still be passable, as the fallen tree does not completely cover the entire width of the road. However, proceed with extreme caution, reduce your speed significantly, and ensure that the remaining gap is sufficient for your vehicle to pass through safely without causing damage to the vehicle or the surroundings. Also, be aware of potential debris from the tree that may not be immediately visible. If there's any doubt about the safety of passing or if the situation changes, be prepared to stop and turn around. It would also be prudent to alert the authorities to this hazard for the safety of other road users.
 
 ### Case: complex sign with social warnings
 ![smash and grab](images/smash_and_grab.jpg)
@@ -315,21 +316,11 @@ Note that the emphasis in the responses given below are mine.
 ### Case: single knocked-over traffic cone
 ![knocked over traffic cone](images/cone_single_knocked_over.jpg)
 - Notes: testing whether this system has the common sense to go around a single knocked-over traffic cone, which likely is not meant as a sign to block vehicles
-- Response from OpenAI GPT-4V: The image displays a traffic cone that has been knocked over onto the road. While it may not block the path entirely, it still poses a potential hazard to drivers.
+- Response from OpenAI GPT-4V:
 
-    Hazards:
+    Recommendation: Maintain speed but prepare to manoeuvre if necessary.
 
-    - Road Obstacle: The fallen cone is an obstacle that vehicles need to avoid, which could lead to sudden lane changes or swerving.
-    - Indication of an Issue: The cone might have been marking a specific hazard on the road, such as a pothole, debris, or an area of construction, which could still be present.
-
-    Recommended Actions:
-
-    - Slow Down: Reduce speed as you approach the cone to give yourself more time to react.
-    - Avoid the Cone: Safely navigate around the cone, ensuring that you check surrounding traffic to do so safely.
-    - Scan for Further Hazards: Look for any additional signs of why the cone was there in the first place, such as road work or a specific hazard on the road.
-    - Do Not Attempt to Re-position the Cone: It’s unsafe to exit your vehicle on a busy road to upright the cone.
-
-    If it's safe to do so, reporting the fallen cone to local authorities or road maintenance can help ensure the hazard is addressed and the cone is put back in place or removed as necessary.
+    Explanation: There is a traffic cone on the road, which indicates a potential hazard or road work ahead. It's lying outside of the pedestrian crossing area, slightly encroaching upon the driving lane. You should be prepared to manoeuvre around it if it obstructs your lane while maintaining a safe distance. However, since it is not directly in the path of the vehicle, there is no immediate need to change speed drastically. Stay alert for any further signs or road work indications.
 
 ### Case: traffic cones in a corner
 ![traffic cones in a conrner](images/cones_on_the_side.jpeg)
