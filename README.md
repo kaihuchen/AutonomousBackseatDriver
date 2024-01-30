@@ -1,7 +1,7 @@
 # A Visual Benchmark for Testing Multimodal LLMs on Autonoumous Driving for Common Sense
 This is part of a series of benchmarks intended for evaluating a given multimodal LLM (Large Language Model), regarding its effectiveness as a visual recognition component in a certain application domain.
 
-This particular benchmark is designed to test a multimodal LLM in the application domain of real-world autonomous driving, where the LLM in question is asked to play the role of a driver, and come up with some recommended actions in response to the image of a given road scene.
+This particular benchmark is designed to test a multimodal LLM in the application domain of **real-world autonomous driving**, where the LLM in question is asked to play the role of a driver, and come up with some recommended actions in response to the image of a given road scene.
 
 Most test cases in the benchmark depict atypical road scenes that are very hard to resolve using traditional computer vision that are trained on fixed categories. You can say that these test cases represent the **long tail cases** that traditional approaches failed to cover, and eventually will trip over on. 
 
