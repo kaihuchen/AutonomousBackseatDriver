@@ -28,10 +28,10 @@ Following are cases where GPT-4V has performed less than stellar:
 
 Comparison between OpenAI GPT-4V and Google Bard/Gemini (supposedly a mixture of the Pro and Ultra versions), based on limited tests on Bard.
 - Bard/Gemini seems to have more problem with picking up text in the given image. For example:
-    - in the [use closed lane](user-content-case-use-closed-lane) case, it combines text from different and somewhat far apart signs ("MAJOR ACCIDENT" and "16") to read "Major Accident 16".
+    - in the [use closed lane](#user-content-case-use-closed-lane) case, it combines text from different and somewhat far apart signs ("MAJOR ACCIDENT" and "16") to read "Major Accident 16".
 - Bard/Gemini seems to have more problem understanding the overall situation when there are multiple clues in the image. For example:
-    - in the [use closed lane](user-content-case-use-closed-lane) case, it gives advices on "LEFT LANES CLOSED" and "USE LEFT LANE" separately, seemingly not noticing that the two messages are contradictory to each other.
-    - 
+    - in the [use closed lane](#user-content-case-use-closed-lane) case, it gives advices on "LEFT LANES CLOSED" and "USE LEFT LANE" separately, seemingly not noticing that the two messages are contradictory to each other.
+    - In the [stop except right turn](#user-content-case-stop-except-right-turn) case, it correctly indicates that the addendum sign means **permitted to make a right turn without stopping again**, but overall still recommends **come to a complete stop** even after user confirming intention to make a right turn in the follow-up Q&A. 
 - 
 
 ## Test Parameters
@@ -441,7 +441,7 @@ Note that the emphasis in the responses given below are mine.
 
     However, it is important to proceed with caution when making the turn, as there could be other vehicles or pedestrians that you need to yield to. Be sure to check both the left and right sides of the intersection before making your turn, and use your turn signal to indicate your intention.
 
-    **Follow-up Q&A**
+    **Follow-up Q&A:**
     - Q: what do I do if I intend to make a right turn?
     - A: Making a right turn at an intersection with a stop sign and "EXCEPT RIGHT TURN" addendum can be done safely with proper precautions. Here's a step-by-step guide:
 
