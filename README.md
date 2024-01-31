@@ -27,6 +27,7 @@ Following is a quick summary of the tests. Overall the GPT-4V model has performe
 Following are cases where GPT-4V has performed less than stellar:
 * In the [lane closure](#user-content-case-lane-closure) case, GPT-4V mistakenly indicated that the **right lane** was closed when it should be the **left lane**. 
 * In the [wrong way](#user-content-case-wrong-way) case, GPT-4V has failed to spot that there is a car driving in the wrong direction in its initial response. However, further interactive queries with GPT-4V show that it has no problem locating the car in question, giving detail description, and suggesting appropriate actions.
+* In the [downed trees](user-content-case-downed-trees) case, GPT-4V got everything right but thought that the road is impassable. But during the follow-up Q&A, it re-evaluate and eventually agreed that part of the road is indeed still passable.
 
 Comparison between OpenAI GPT-4V and Google Bard/Gemini (supposedly a mixture of the Pro and Ultra versions), based on limited tests on Bard/Gemini.
 - Bard/Gemini seems to have more problem with picking up text in the given image. For example:
