@@ -79,13 +79,32 @@ Note that the emphasis in the responses given below are mine.
     It is important to note that this response would be appropriate for a real nuclear event. However, the image provided is likely not a real scenario but a digital creation or a photo from a controlled test or movie scene. If you are ever unsure about whether a situation like this is real, it's crucial to seek information from reliable sources and follow official guidance.
 
 ### Case: tornado ahead
-![tornado ahead](images/tornadoes.jpg)
+![tornado ahead](images/tornado2.jpg)
 - Notes: unusual and extremely dangerous. Testing scenario never trained for, and commonsense reaction. 
-- Response from OpenAI GPT-4V: The image depicts a large tornado directly in the path of the road. Tornadoes are extremely dangerous and can cause catastrophic damage to vehicles, buildings, and the environment, as well as serious injury or loss of life.
+- Response from OpenAI GPT-4V: Based on the image provided, I recommend immediately seeking shelter and not attempting to drive any further. You are facing a severe tornado which is a life-threatening event. It is critical to turn around if it is safe to do so, and drive away from the tornado to the nearest shelter. If that is not possible, abandon the vehicle and find a secure building or a tornado shelter. If there is no available shelter nearby, lying flat in a ditch or low-lying area may be a last resort, but be aware of the risk of flooding. Do not stay in the vehicle as it can be picked up or smashed by the tornado.
 
-    The immediate recommendation is to not proceed. Turn the vehicle around and drive away from the tornado at a right angle to its apparent path to seek immediate shelter. If you cannot quickly drive to a safe location, it's advised to exit the vehicle and find a low-lying area, such as a ditch, to lie down in, covering your head with your arms to protect yourself from flying debris and high winds. Do not seek shelter under overpasses or bridges, as these can create dangerous wind channels.
+    Tornadoes can change direction quickly and are unpredictable, so it is essential to maintain a safe distance from the tornado at all times.
+- Response from Google Bard/Gemini: Based on the image you sent, I would recommend that you come to a complete stop as soon as possible and seek shelter immediately.
 
-    It's also important to listen to weather alerts and have a plan for seeking shelter in case of severe weather like this. If you're in a region prone to tornadoes, keeping an emergency kit in your vehicle, including a first aid kit, water, food, and a portable weather radio, is advisable.
+    The image shows a large and powerful tornado that is moving directly towards the road. Tornadoes are incredibly dangerous and can cause major damage and injuries, even if you are not directly hit by the funnel cloud. The flying debris that is kicked up by the tornado can be just as dangerous as the tornado itself, and can easily puncture your car or cause you to lose control.
+
+    Here are some of the specific hazards that you can see in the image:
+
+    - The large funnel cloud: This is the most obvious sign of a tornado. The fact that it is dark and well-defined means that it is a strong tornado that is capable of causing significant damage.
+    - The debris: You can see debris, such as trees and branches, being sucked up into the funnel cloud. This is a sign that the tornado is already causing damage and that it is likely to continue to do so.
+    - The dark and ominous sky: The dark clouds and rain that are visible in the image are a sign that the storm is severe and that there is a significant risk of tornadoes and other dangerous weather conditions.
+
+    Given the severity of the danger, it is important to take action immediately. The safest course of action is to stop your car and seek shelter in a sturdy building. If there is no building available, you can try to find a ditch or other low-lying area to lie in. However, it is important to remember that even if you are not directly hit by the tornado, you can still be injured by flying debris.
+
+    Here are some additional tips for staying safe in a tornado:
+
+    - Get out of your car and lie flat in a ditch or other low-lying area.
+    - Cover your head with your hands or a blanket.
+    - Do not try to outrun the tornado.
+    - Do not go under an overpass or bridge.
+    - Be aware of your surroundings and watch for falling debris.
+
+    I hope this information is helpful. Please stay safe!
 
 ### Case: tornado on a commercial billboard 
 ![fake tornado](images/tornado_fake.png)
@@ -398,6 +417,7 @@ Note that the emphasis in the responses given below are mine.
     Recommendation: Reduce speed and prepare to stop.
     
     Explanation: There is a large group of camels occupying both lanes of the road ahead, and due to their number and the lack of alternative routes, it is not safe to attempt to pass. The best course of action is to slow down immediately and be prepared to come to a complete stop. Since this appears to be a controlled caravan crossing, observe the situation from a safe distance and wait for a signal or opportunity to pass safely. It’s important to be patient and cautious in this scenario to avoid causing distress to the animals or creating a hazardous situation.
+- Response from Google Bard/Gemini: Sorry, I can't help with images of people yet.
 
 ### Case: use closed lane
 ![use closed lane](images/use_closed_lane.png)
