@@ -469,7 +469,7 @@ Note that the emphasis in the responses given below are mine.
 - If you have any comments, please leave them on the issues section for this repository.
 - A **live demo** named [Autonomouse Backseat Driver](https://chat.openai.com/g/g-e4IV3KhGm-autonomous-backseat-driver) is made available as a Custom GPT in OpenAI's GPTs Store (a subscription to ChatGPT Plus may be required by OpenAI).
 
-    We named this Custom GPT **Autonomous Backseat Driver**, because behaves kind of like a backseat passenger who offers plenty of suggestions but controls nothing.
+    We named this Custom GPT **Autonomous Backseat Driver**, because it behaves kind of like a backseat passenger who offers plenty of suggestions but controls nothing.
 
     This Custom GPT is designed with the following prompt:
 
