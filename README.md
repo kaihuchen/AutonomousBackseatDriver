@@ -1,25 +1,20 @@
-# A Visual Benchmark for Testing Multimodal LLMs on Autonoumous Driving for Common Sense
-This is part of a series of benchmarks intended for evaluating a given multimodal LLM (Large Language Model), regarding its effectiveness as a visual recognition component in a certain application domain.
+# Evaluation Multimodal LLM's Role in Autonomous Driving
 
-This particular benchmark is designed to test a multimodal LLM in the application domain of **real-world autonomous driving**, where the LLM in question is asked to play the role of a driver, and come up with some recommended actions in response to the image of a given road scene.
+This article presents a series of test cases designed to evaluate the performance of a multimodal Large Language Model (LLM) in the context of **real-world autonomous driving**. In these tests, the LLM assumes the role of a driver, must respond appropriately to various road scenes depicted in images, and providing explanations for its actions.
 
-Most test cases in the benchmark depict atypical road scenes that are very hard to resolve using traditional computer vision that are trained on fixed categories. You can say that these test cases represent the **long tail cases** that traditional approaches failed to cover, and eventually will trip over on. 
+The primary aim of these tests is to assess the LLM’s ability to generate **commonsense responses to uncommon situations**.
 
-If a multimodal LLM is able to handle most of the test cases with flying colors, then this LLM can be said to possess broad real-world commonsense knowledge, and then it has a much better chance of doing well in our infinitely complex and confusing real world.
+Many of these test cases pose challenges for conventional computer vision systems, which are typically trained on fixed categories. These test cases represent the **long tail cases** that are not covered by the training data and often prove problematic for conventional approaches.
 
-## Test Parameters
-* The test results listed below are mainly derived using OpenAI's GPT-4V model. At this time results from Googel Bard/Gemini are much more limited, due to problem where Bard/Gemini often refuse to process a given image. 
-* The LLMs in question here are meant for providing **high-level commonsense suggestions** and detailed explanations to autonomous vehicles operating in the **open world**. This is not for lower-level controls like lane following, navigation, or parking, but about assessing the overall situation and providing appropriate advice. 
-* For the purpose of this study, issues such as cost and efficiency are intentionally ignored.
-* Note that multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [standing water or sink hole](#user-content-case-standing-water-or-sink-hole))
+If a multimodal LLM successfully navigates the majority of these test cases, it can be considered to possess the **road commonsense** needed to operate in the unpredictable real-world. This also suggests that it could serve as a valuable supplementary component in an autonomous vehicle system.
 
-## Summary
-Overall the GPT-4V model has performed very well in the following scenarios:
+## Test Summary
+Following is a quick summary of the tests. Overall the GPT-4V model has performed very well in the following scenarios:
 * Distinguishing fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
 * Recognizing tornado on a billboard commercial as false positive, while a tornado alert on a digital display is correctly identified as true warning.
 * Spotting pedestrian in crosswalk under low light situation.
 * Reading and fully understanding complex signs with lots of text, including non-driving signs such as the [smash and grab](#user-content-case-complex-sign-with-social-warnings) case.
-* Reasoning against complex signs and answer interactive query correctly (see case [too many signs](#user-content-case-too-many-signs))
+* Reasoning against complex signs and answer interactive queries correctly (see case [too many signs](#user-content-case-too-many-signs))
 * Ignoring impossible road sign (such as speed limit of 0)
 * Understanding uncommon warning signs (such as the 'low salt' sign)
 * Appropriate handling of unusual hazard (e.g., giant inflatable object blocking road, dangling electrical wire, nearly invisible overturned trailer, etc.)
@@ -29,25 +24,25 @@ Overall the GPT-4V model has performed very well in the following scenarios:
 
 Following are cases where GPT-4V has performed less than stellar:
 * In the [lane closure](#user-content-case-lane-closure) case, GPT-4V mistakenly indicated that the **right lane** was closed when it should be the **left lane**. 
-* In the [wrong way](#user-content-case-wrong-way) case, GPT-4V has failed to spot that there is a car driving in the wrong direction in its initial response. However, further interactive queries with GPT-4V shows that it has no problem locating the car in question, giving detail description, and suggesting appropriate actions.
+* In the [wrong way](#user-content-case-wrong-way) case, GPT-4V has failed to spot that there is a car driving in the wrong direction in its initial response. However, further interactive queries with GPT-4V show that it has no problem locating the car in question, giving detail description, and suggesting appropriate actions.
 
-## Live Demo
-A live demo named [Autonomouse Backseat Driver](https://chat.openai.com/g/g-e4IV3KhGm-autonomous-backseat-driver) is made available as a Custom GPT in OpenAI's GPTs Store.
+Comparison between OpenAI GPT-4V and Google Bard/Gemini (supposedly a mixture of the Pro and Ultra versions), based on limited tests on Bard.
+- Bard/Gemini seems to have more problem with picking up text in the given image. For example:
+    - in the [use closed lane](user-content-case-use-closed-lane) case, it combines text from different and somewhat far apart signs ("MAJOR ACCIDENT" and "16") to read "Major Accident 16".
+- Bard/Gemini seems to have more problem understanding the overall situation when there are multiple clues in the image. For example:
+    - in the [use closed lane](user-content-case-use-closed-lane) case, it gives advices on "LEFT LANES CLOSED" and "USE LEFT LANE" separately, seemingly not noticing that the two messages are contradictory to each other.
+    - 
+- 
 
-We named this Custom GPT **Autonomous Backseat Driver**, because we expect this component to offer only higher-level advices to the vehicle, while leaving the low-level controls to other components, kind of like a backseat passenger who offers plenty of suggestions but controls nothing.
-
-The cases given below are tested using this Custom GPT, which is designed with the following prompt:
-
-> Imagine that you are the driver of a car. The forward camera is showing the given image. Based on this image please make a recommendation on whether to speed up, maintain speed, turn around, or just advise user to pay special attention. If there are more than one plausible and serious hazards, report them all to the user. Also explain your recommendation.
-
-You are welcome to go to this Custom GPT to upload photo of a road scene, and the this Custom GPT will then return high-level driving suggestions along with an explanation. 
+## Test Parameters
+* The test results listed below are mainly derived using OpenAI's GPT-4V model. At this time results from Googel Bard/Gemini are much more limited, due to problem where Bard/Gemini often refuses to process a given image. 
+* The LLMs in question here are meant for providing **high-level commonsense suggestions** and detailed explanations to autonomous vehicles operating in the **open world**. This is not for lower-level controls like lane following, navigation, or parking, but about assessing the overall situation and providing appropriate advice. 
+* For the purpose of this study, issues such as cost and efficiency are intentionally ignored.
+* Note that multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [standing water or sink hole](#user-content-case-standing-water-or-sink-hole))
 
 ## Test Cases
 
-Following is a list of test cases, with the following tests parameters:
-
-* At this point we conduct the tests against GPT-4V only. Later we may also test it with Google Gemini, or other multimodal LLM if available. All models are tested as-is without any fine-tuning.
-* We use an Autonomous Car as our test scenario, so test images are collected with this in mind. If successful, then it may indicate that applying this approach to other types of autonomous vehicles such as drones or mobile robots are also worthwhile.
+Following is a list of test cases that cover a variety of road situations.
 
 Note that the emphasis in the responses given below are mine.
 
@@ -436,6 +431,25 @@ Note that the emphasis in the responses given below are mine.
     - Turn on your hazard lights to let other drivers know that you are aware of the accident.
     - Be patient and allow extra time for your trip. 
 
+### Case: stop except right turn
+![stop except right turn](images/stop_except_right_turn.jpg)
+- Notes: test reasoning on no-so-common traffic sign
+- Response from OpenAI GPT-4V: Please come to a complete stop at the stop sign ahead. After stopping, you may proceed with a right turn **without stopping again**, as the sign indicates "EXCEPT RIGHT TURN." However, please ensure you yield to any pedestrians, cyclists, or oncoming traffic before making the turn. If you wish to go straight or turn left, you must wait for a safe and legal opportunity to do so.
+- Response from Google Bard/Gemini: Based on the image, I would recommend that you **come to a complete stop** and then proceed with caution when making a right turn.
+
+    The image shows a stop sign with an addendum sign below it that states "EXCEPT RIGHT TURN." This means that you are required to come to a complete stop at the intersection, but you are then **permitted to make a right turn without stopping again**.
+
+    However, it is important to proceed with caution when making the turn, as there could be other vehicles or pedestrians that you need to yield to. Be sure to check both the left and right sides of the intersection before making your turn, and use your turn signal to indicate your intention.
+
+    **Follow-up Q&A**
+    - Q: what do I do if I intend to make a right turn?
+    - A: Making a right turn at an intersection with a stop sign and "EXCEPT RIGHT TURN" addendum can be done safely with proper precautions. Here's a step-by-step guide:
+
+        1. Approach the intersection cautiously. Slow down as you near the stop sign, paying attention to any traffic signals or oncoming vehicles.
+
+        2. **Come to a complete stop**. Make sure your car comes to a complete stop before the stop line, which is usually the white line painted before the crosswalk.
+
+        3. Check for traffic and pedestrians. Before proceeding, look carefully in all directions for oncoming traffic, including cars, motorcycles, bikes, and pedestrians. Use your mirrors and physically turn your head to check blind spots.
 
 <!--
 ### Case: 
@@ -444,6 +458,18 @@ Note that the emphasis in the responses given below are mine.
 - Response from OpenAI GPT-4V: 
 -->
 
-## In Conclusion
+## Additional Information and Feeback
 
-If you have any comments, please leave them on the issues section for this repository.
+- This is part of a series of tests intended for testing a given multimodal LLM (Large Language Model) regarding its effectiveness as a visual recognition component in a certain application domain. Here are some of them:
+    - [Diagnostic reasoning over medical images](https://github.com/kaihuchen/GenAiRadiologist)
+    - [CareAlerrt](https://github.com/kaihuchen/CareAlert): evaluates images for safety concerns and provides immediate guidance, for babies, seniors, and pets.
+- If you have any comments, please leave them on the issues section for this repository.
+- A **live demo** named [Autonomouse Backseat Driver](https://chat.openai.com/g/g-e4IV3KhGm-autonomous-backseat-driver) is made available as a Custom GPT in OpenAI's GPTs Store.
+
+We named this Custom GPT **Autonomous Backseat Driver**, because we expect this component to offer only higher-level advices to the vehicle, while leaving the low-level controls to other components, kind of like a backseat passenger who offers plenty of suggestions but controls nothing.
+
+The cases given below are tested using this Custom GPT, which is designed with the following prompt:
+
+> Imagine that you are the driver of a car. The forward camera is showing the given image. Based on this image please make a recommendation on whether to speed up, maintain speed, turn around, or just advise user to pay special attention. If there are more than one plausible and serious hazards, report them all to the user. Also explain your recommendation.
+
+You are welcome to go to this Custom GPT to upload photo of a road scene, and the this Custom GPT will then return high-level driving suggestions along with an explanation. 
