@@ -1,5 +1,7 @@
 # Evaluation Multimodal LLM's Role in Autonomous Driving
 
+*last updated 2024.01.31*
+
 This article presents a series of test cases designed to evaluate the performance of a multimodal Large Language Model (LLM) in the context of **real-world autonomous driving**. In these tests, the LLM assumes the role of a driver, must respond appropriately to various road scenes depicted in images, and providing explanations for its actions.
 
 The primary aim of these tests is to assess the LLM’s ability to generate **commonsense responses to uncommon situations**.
@@ -26,13 +28,13 @@ Following are cases where GPT-4V has performed less than stellar:
 * In the [lane closure](#user-content-case-lane-closure) case, GPT-4V mistakenly indicated that the **right lane** was closed when it should be the **left lane**. 
 * In the [wrong way](#user-content-case-wrong-way) case, GPT-4V has failed to spot that there is a car driving in the wrong direction in its initial response. However, further interactive queries with GPT-4V show that it has no problem locating the car in question, giving detail description, and suggesting appropriate actions.
 
-Comparison between OpenAI GPT-4V and Google Bard/Gemini (supposedly a mixture of the Pro and Ultra versions), based on limited tests on Bard.
+Comparison between OpenAI GPT-4V and Google Bard/Gemini (supposedly a mixture of the Pro and Ultra versions), based on limited tests on Bard/Gemini.
 - Bard/Gemini seems to have more problem with picking up text in the given image. For example:
     - in the [use closed lane](#user-content-case-use-closed-lane) case, it combines text from different and somewhat far apart signs ("MAJOR ACCIDENT" and "16") to read "Major Accident 16".
 - Bard/Gemini seems to have more problem understanding the overall situation when there are multiple clues in the image. For example:
     - in the [use closed lane](#user-content-case-use-closed-lane) case, it gives advices on "LEFT LANES CLOSED" and "USE LEFT LANE" separately, seemingly not noticing that the two messages are contradictory to each other.
     - In the [stop except right turn](#user-content-case-stop-except-right-turn) case, it correctly indicates that the addendum sign means **permitted to make a right turn without stopping again**, but overall still recommends **come to a complete stop** even after user confirming intention to make a right turn in the follow-up Q&A. 
-- 
+- When attempting to enter text/image of multiple test cases into the web UI of Bard/Gemini, it tends to get confused about which text or image should be used.
 
 ## Test Parameters
 * The test results listed below are mainly derived using OpenAI's GPT-4V model. At this time results from Googel Bard/Gemini are much more limited, due to problem where Bard/Gemini often refuses to process a given image. 
@@ -458,18 +460,18 @@ Note that the emphasis in the responses given below are mine.
 - Response from OpenAI GPT-4V: 
 -->
 
-## Additional Information and Feeback
+## Additional Resources
 
 - This is part of a series of tests intended for testing a given multimodal LLM (Large Language Model) regarding its effectiveness as a visual recognition component in a certain application domain. Here are some of them:
-    - [Diagnostic reasoning over medical images](https://github.com/kaihuchen/GenAiRadiologist)
-    - [CareAlerrt](https://github.com/kaihuchen/CareAlert): evaluates images for safety concerns and provides immediate guidance, for babies, seniors, and pets.
+    - [Diagnostic reasoning over medical images](https://github.com/kaihuchen/GenAiRadiologist) (*Unfinished*)
+    - [CareAlerrt](https://github.com/kaihuchen/CareAlert): evaluates images for safety concerns and provides immediate guidance, for babies, seniors, and pets. (*Unfinished*)
 - If you have any comments, please leave them on the issues section for this repository.
-- A **live demo** named [Autonomouse Backseat Driver](https://chat.openai.com/g/g-e4IV3KhGm-autonomous-backseat-driver) is made available as a Custom GPT in OpenAI's GPTs Store.
+- A **live demo** named [Autonomouse Backseat Driver](https://chat.openai.com/g/g-e4IV3KhGm-autonomous-backseat-driver) is made available as a Custom GPT in OpenAI's GPTs Store (a subscription to ChatGPT Plus may be required by OpenAI).
 
-We named this Custom GPT **Autonomous Backseat Driver**, because we expect this component to offer only higher-level advices to the vehicle, while leaving the low-level controls to other components, kind of like a backseat passenger who offers plenty of suggestions but controls nothing.
+    We named this Custom GPT **Autonomous Backseat Driver**, because behaves kind of like a backseat passenger who offers plenty of suggestions but controls nothing.
 
-The cases given below are tested using this Custom GPT, which is designed with the following prompt:
+    This Custom GPT is designed with the following prompt:
 
-> Imagine that you are the driver of a car. The forward camera is showing the given image. Based on this image please make a recommendation on whether to speed up, maintain speed, turn around, or just advise user to pay special attention. If there are more than one plausible and serious hazards, report them all to the user. Also explain your recommendation.
+    > Imagine that you are the driver of a car. The forward camera is showing the given image. Based on this image please make a recommendation on whether to speed up, maintain speed, turn around, or just advise user to pay special attention. If there are more than one plausible and serious hazards, report them all to the user. Also explain your recommendation.
 
-You are welcome to go to this Custom GPT to upload photo of a road scene, and the this Custom GPT will then return high-level driving suggestions along with an explanation. 
+    You are welcome to go to this Custom GPT to upload photo of a road scene, and this Custom GPT will then return high-level driving suggestions along with an explanation. 
