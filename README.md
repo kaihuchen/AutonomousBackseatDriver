@@ -463,7 +463,7 @@ Note that the emphasis in the responses given below are mine.
 
 ## Additional Resources
 
-- This is part of a series of tests intended for testing a given multimodal LLM (Large Language Model) regarding its effectiveness as a visual recognition component in a certain application domain. Here are some of them:
+- This is part of a series of studies that investigate the use of multimodal LLMs (Large Language Models) for solving complex real-world problems. Here are some of them:
     - [Diagnostic reasoning over medical images](https://github.com/kaihuchen/GenAiRadiologist) (*Unfinished*)
     - [CareAlerrt](https://github.com/kaihuchen/CareAlert): evaluates images for safety concerns and provides immediate guidance, for babies, seniors, and pets. (*Unfinished*)
 - If you have any comments, please leave them on the issues section for this repository.
