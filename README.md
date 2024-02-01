@@ -250,8 +250,8 @@ Note that the emphasis in the responses given below are mine.
         Therefore, you should be able to park at this location at 2 PM on a Saturday without violating the restrictions shown. However, always be sure to observe any other possible restrictions that may not be visible in the image or any temporary restrictions that may be in place.
 
 ### Case: unreasonable traffic sign
-![speed limit 0](images/speed_limit_0.png)
-- Notes: test whether system has the common sense to no obey unreasonable traffic sign
+![speed limit 0](images/speed_limit_0.jpg)
+- Notes: test whether system has the common sense to not obey an unreasonable traffic sign
 - Response from OpenAI GPT-4V: The image appears to show a speed limit sign with the number "0" on it. This sign is not practical for normal traffic conditions since a speed limit of "0" miles per hour would mean no movement is allowed. This could be a sign that has been altered for humorous purposes or represents an artistic or symbolic message rather than an actual traffic control device.
 
     In a real-world scenario, if you encounter a sign that you believe is incorrect or seems to be a mistake, you should not follow it literally. Instead, drive at a speed that is safe for the road conditions and in accordance with the typical legal speed limits for the area, while seeking further clarification from local traffic authorities if possible.
@@ -418,6 +418,61 @@ Note that the emphasis in the responses given below are mine.
     
     Explanation: There is a large group of camels occupying both lanes of the road ahead, and due to their number and the lack of alternative routes, it is not safe to attempt to pass. The best course of action is to slow down immediately and be prepared to come to a complete stop. Since this appears to be a controlled caravan crossing, observe the situation from a safe distance and wait for a signal or opportunity to pass safely. It’s important to be patient and cautious in this scenario to avoid causing distress to the animals or creating a hazardous situation.
 - Response from Google Bard/Gemini: Sorry, I can't help with images of people yet.
+
+### Case: elephant statues
+![elephant statues](images/elephant_statues.jpg)
+- Notes: Testing system's ability to tell fake and real animals apart, and respond accordingly
+- Response from OpenAI GPT-4V: The image shows two large elephant statues, one painted white and the other pink, by the side of the road. This is not a direct driving hazard, but there are indirect considerations:
+
+    - Distraction: Unusual roadside attractions like these can be a distraction to drivers, which might cause them to momentarily take their attention away from the road.
+    - Pedestrian Traffic: Attractions may lead to increased pedestrian traffic as people may stop to look or take photos.
+    - Vehicles Slowing or Stopping: Drivers might slow down or stop to view the attraction, which could cause unexpected traffic patterns or congestion.
+
+    Recommendations:
+
+    - Maintain Focus: Keep your attention on the road and be wary - - of any potential distractions.
+    - Be Aware of Pedestrians: Watch for pedestrians who may be crossing the road or walking alongside it.
+    - Prepare for Other Drivers: Be ready for other vehicles that may slow down unexpectedly or pull over.
+    - Do Not Stop on the Road: If you wish to view the attraction, find a safe place to park your vehicle off the road.
+
+    Immediate Recommendation: Continue driving with caution, keeping an eye out for any pedestrians or vehicles that may be stopping or slowing down because of the statues. It's important to stay focused on driving and to not let roadside distractions interfere with safety.
+
+### Case: cows behind fence
+![cows behind fence](images/cows_behind_fence.jpg)
+- Notes: Testing system's ability to recognize that large animal behind fence are relatively safe
+- Response from OpenAI GPT-4V: The image shows cows near a road, which can pose several indirect risks to drivers:
+
+    - Animals on the Roadway: Cows may enter the road, creating a hazard. Animal crossings are unpredictable and can cause accidents.
+    - Slow Down: Reduce speed when driving near livestock to react safely should an animal break through the fence or be on the road.
+    - Stay Alert: Watch for any breaks or weaknesses in the fence line that may allow animals to cross onto the road.
+    - Farm Vehicle Traffic: In agricultural areas, be prepared for farm vehicles entering and exiting fields or crossing the road.
+
+    Recommendations:
+
+    - Reduce Speed: Especially if the cows are close to the fence line near the road, slow down in anticipation of any potential hazards.
+    - Be Observant: Keep an eye out for any cows that may stray onto the road or for farm vehicles.
+    - No Sudden Movements: If an animal does enter the road, brake gently to come to a stop. Do not swerve suddenly, as this can lead to loss of vehicle control or cause an accident with another vehicle.
+
+    Immediate Recommendation: Continue with caution, monitor the movement of the cows, and be prepared to stop if necessary. It's important to keep a safe speed and stay alert in areas where livestock are present.
+
+### Case: horses by road
+![horses by road](images/horses_by_road.jpg)
+- Notes: to confirm that system understands large un-fenced animals by a narrow road are cause for concern
+- Response from OpenAI GPT-4V: The image shows horses close to a narrow rural road. Just like with cows, horses near the roadway can pose risks:
+
+    - Animals on the Roadway: Horses may stray onto the road, which could be hazardous for both the animals and drivers.
+    - Road Conditions: The road appears wet, which could lead to reduced traction and longer stopping distances.
+    - Narrow Road: The road is narrow, with limited space for maneuvering around unexpected obstacles, such as animals on the road.
+
+    Recommendations:
+
+    - Reduce Speed: Approach with caution and at a speed that allows you to stop safely if a horse enters the road.
+    - Stay Alert: Keep an eye on the horses' behavior, as they can be unpredictable and may move towards the road unexpectedly.
+    - Pass Carefully: If you must pass the horses, do so slowly and give them as much room as safely possible.
+    - Watch for Riders: Be aware that there could be riders with the horses who may not be immediately visible.
+
+    Immediate Recommendation: Continue with increased caution and be prepared to stop or slow down if necessary. Respect the animals' space and ensure your driving does not startle them, as this could cause an accident.
+
 
 ### Case: use closed lane
 ![use closed lane](images/use_closed_lane.png)
