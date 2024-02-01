@@ -2,7 +2,7 @@
 
 *last updated 2024.01.31*
 
-This article presents a series of test cases designed to evaluate the performance of a multimodal Large Language Model (LLM) in the context of **real-world autonomous driving**. In these tests, the LLM assumes the role of a driver, must respond appropriately to various road scenes depicted in images, and providing explanations for its actions.
+This article presents a series of test cases designed to evaluate the performance of a multimodal Large Language Model (LLM) in the context of **real-world autonomous driving**. In these tests, the LLM assumes the role of a driver, must respond appropriately to various road scenes depicted in images, and provide explanations for its actions.
 
 The primary aim of these tests is to assess the LLM’s ability to generate **commonsense responses to uncommon situations**.
 
