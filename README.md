@@ -2,16 +2,17 @@
 
 *last updated 2024.01.31*
 
-This article presents a series of test cases designed to evaluate the performance of a multimodal Large Language Model (LLM) in the context of **real-world autonomous driving**. In these tests, the LLM assumes the role of a driver, must respond appropriately to various road scenes depicted in images, and provide explanations for its actions.
+This article introduces a set of test scenarios aimed at gauging the performance of a multimodal Large Language Model (LLM) within the scope of **real-world autonomous driving**. In these scenarios, the LLM takes on the role of a driver, is required to react appropriately to various road situations represented in images, and provide justifications for its decisions.
 
-The primary aim of these tests is to assess the LLM’s ability to generate **commonsense responses to uncommon situations**.
+The primary objective of these tests is to evaluate the LLM’s capacity to produce **commonsense reactions to unusual circumstances**. The overarching goal is to determine if the commonsense knowledge embedded within a multimodal LLM is adequate for practical use, not just in autonomous driving, but in broader applications as well.
 
-Many of these test cases pose challenges for conventional computer vision systems, which are typically trained on fixed categories. These test cases represent the **long tail cases** that are not covered by the training data and often prove problematic for conventional approaches.
+Many of these test cases pose challenges for traditional computer vision systems, which are generally trained on predefined categories. These scenarios represent the **long tail cases** that fall outside the scope of the training data and often prove problematic for traditional approaches
 
-If a multimodal LLM successfully navigates the majority of these test cases, it can be considered to possess the **road commonsense** needed to operate in the unpredictable real-world. This also suggests that it could serve as a valuable supplementary component in an autonomous vehicle system.
+If a multimodal LLM can successfully handle most of these test scenarios, it can be deemed to have the necessary **road commonsense** to function in the unpredictable real world. This also implies that it could be a useful additional element in an autonomous vehicle system.
 
 ## Test Summary
 Following is a quick summary of the tests. Overall the GPT-4V model has performed very well in the following scenarios:
+
 * Distinguishing fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
 * Recognizing tornado on a billboard commercial as false positive, while a tornado alert on a digital display is correctly identified as true warning.
 * Spotting pedestrian in crosswalk under low light situation.
@@ -23,6 +24,7 @@ Following is a quick summary of the tests. Overall the GPT-4V model has performe
 * Working around doubtful traffic sign (such as a singular knocked-over traffic cone)
 * Doesn't get distracted by inconsequential traffic signs (e.g., traffic cones in a corner)
 * Doesn't get confused by adversarial traffic signs.
+* Inferring likely hazards from available clues before it occures, such as in the [unsecured cooler](#user-content-case-unsecured-cooler) case.
 
 Following are cases where GPT-4V has performed less than stellar:
 * In the [lane closure](#user-content-case-lane-closure) case, GPT-4V mistakenly indicated that the **right lane** was closed when it should be the **left lane**. 
