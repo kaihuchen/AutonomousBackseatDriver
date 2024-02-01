@@ -529,6 +529,25 @@ Note that the emphasis in the responses given below are mine.
 
         3. Check for traffic and pedestrians. Before proceeding, look carefully in all directions for oncoming traffic, including cars, motorcycles, bikes, and pedestrians. Use your mirrors and physically turn your head to check blind spots.
 
+### Case: unsecured cooler
+![unsecured cooler](images/unsecured_cooler.jpg)
+- Notes: test ability to anticipate hazard that may occur
+- Response from OpenAI GPT-4V: The image shows a pickup truck with a cooler attached to the tailgate with a bungee cord, creating a potential road hazard.
+
+    Hazards:
+
+    - Unsecured Load: The cooler may not be securely attached and could fall off into the roadway, creating a hazard for other drivers.
+    - Distracting: Other drivers may become distracted by the unusual sight, leading to a lack of attention to the road.
+    - Sudden Stops: If the cooler were to fall off, it could cause the driver behind to stop suddenly, increasing the risk of a rear-end collision.
+
+    Recommendations:
+
+    - Increase Following Distance: Keep a safe distance from the truck to allow more reaction time if the cooler falls off or if you need to stop suddenly.
+    - Pass with Caution: If you decide to pass the vehicle, do so carefully and when it's safe, ensuring you're not in the path of the cooler if it detaches.
+    - Stay Alert: Be prepared for the unexpected, whether it's the cooler detaching or other drivers' reactions.
+
+    Immediate Recommendation: Maintain a safe distance behind the truck and remain vigilant. If you are able to alert the driver safely about the insecure load, do so at the next stop or by signaling to them if it's safe and legal in your location.
+
 <!--
 ### Case: 
 ![](images/)
