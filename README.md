@@ -60,12 +60,16 @@ Note that the emphasis in the responses given below are mine.
 
 ### Case: monster ahead
 ![monster ahead](images/monster2.jpg)
-[Image credit: Poplavsky](https://www.artstation.com/artwork/qlzkR)
+<!-- [Image credit: ]() -->
 
 - Notes: extremely unusual scene. Testing sense of reality.
-- Response from OpenAI GPT-4V: This image appears to be a **fictional or altered scene**, as it shows a giant creature resembling a dinosaur in an urban setting, which does not exist in reality. In the context of the scenario you've asked me to provide advice on, **if this were a real situation**, it would constitute an extreme hazard.
+- Response from OpenAI GPT-4V: In this situation, you should:
 
-    The recommended action would be to immediately stop the vehicle at a safe distance, and reverse or turn around if possible to evacuate the area. Contacting emergency services would be crucial...</td>
+    - Turn Around Immediately: The image depicts a large dinosaur-like creature in the middle of an urban street. Although this is clearly a fantastical or simulated scenario since dinosaurs are extinct and this could be a scene from a movie, video game, or a simulation, if you were to take this scene at face value, the presence of such a large creature would pose an immediate and serious hazard.
+    - Evacuate the Area: Given the scale and potential danger represented by the creature, it is advisable to leave the area immediately in the safest and quickest way possible.
+    - Alert Authorities: If this were a real situation, it would be important to contact emergency services to report the incident.
+
+    Of course, due to the fantastical nature of the scene, this advice is hypothetical and given in the spirit of the scenario presented.
 
 ### Case: explosion ahead
 ![explosion ahead](images/nuclear.jpg)
@@ -335,7 +339,7 @@ Note that the emphasis in the responses given below are mine.
     Always maintain a safe following distance to allow time for sudden stops, and be ready to react to the actions of drivers ahead who may also be responding to the hazard.
 
 ### Case: single knocked-over traffic cone
-![knocked over traffic cone](images/cone_single_knocked_over.jpg)
+![knocked over traffic cone](images/cone_single_knocked_over.png)
 - Notes: testing whether this system has the common sense to go around a single knocked-over traffic cone, which likely is not meant as a sign to block vehicles
 - Response from OpenAI GPT-4V:
 
