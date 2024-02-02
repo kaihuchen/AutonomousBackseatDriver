@@ -1,35 +1,37 @@
 # Evaluating Multimodal LLM's Use in Autonomous Driving
 
-*last updated 2024.01.31*
+*last updated February 1, 2024*
 
 This article introduces a set of test scenarios aimed at gauging the performance of a multimodal Large Language Model (LLM) within the scope of **real-world autonomous driving**. In these scenarios, the LLM takes on the role of a driver, is required to react appropriately to various road situations represented in images, and provide justifications for its decisions.
 
 The primary objective of these tests is to evaluate the LLM’s capacity to produce **commonsense reactions to unusual circumstances**. The overarching goal is to determine if the commonsense knowledge embedded within a multimodal LLM is adequate for practical use, not just in autonomous driving, but in broader applications as well.
 
-Many of these test cases pose challenges for traditional computer vision systems, which are generally trained on predefined categories. These scenarios represent the **long tail cases** that fall outside the scope of the training data and often prove problematic for traditional approaches
+Many of these test cases pose challenges for traditional computer vision systems, which are generally trained on predefined categories. These scenarios represent the [**long-tail cases**](https://spectrum.ieee.org/autonomous-cars-vs-kangaroos-the-long-furry-tail-of-unlikely-events) that fall outside the scope of the training data and often prove problematic for traditional approaches.
 
 If a multimodal LLM can successfully handle most of these test scenarios, it can be deemed to have the necessary **road commonsense** to function in the unpredictable real world. This also implies that it could be a useful additional element in an autonomous vehicle system.
 
 ## Test Summary
+
 Following is a quick summary of the tests. Overall the GPT-4V model has performed very well in the following scenarios:
 
-* Distinguishing fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
-* Recognizing tornado on a billboard commercial as false positive, while a tornado alert on a digital display is correctly identified as true warning.
-* Spotting pedestrian in crosswalk under low light situation.
-* Reading and fully understanding complex signs with lots of text, including non-driving signs such as the [smash and grab](#user-content-case-complex-sign-with-social-warnings) case.
-* Reasoning against complex signs and answer interactive queries correctly (see case [too many signs](#user-content-case-too-many-signs))
-* Ignoring impossible road sign (such as speed limit of 0)
+* Distinguish fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
+* Recognize tornado on a billboard commercial as false positive, while a tornado alert on a digital display is correctly identified as true warning.
+* Spot pedestrian in crosswalk under low light situation.
+* Read and fully understanding complex signs with lots of text, including non-driving signs such as the [smash and grab](#user-content-case-complex-sign-with-social-warnings) case.
+* Reason against complex signs and answer interactive queries correctly (see case [too many signs](#user-content-case-too-many-signs))
+* Ignore impossible road sign (such as speed limit of 0)
 * Understanding uncommon warning signs (such as the 'low salt' sign)
 * Appropriate handling of unusual hazard (e.g., giant inflatable object blocking road, dangling electrical wire, nearly invisible overturned trailer, etc.)
-* Working around doubtful traffic sign (such as a singular knocked-over traffic cone)
+* Work around doubtful traffic sign (such as a singular knocked-over traffic cone)
 * Doesn't get distracted by inconsequential traffic signs (e.g., traffic cones in a corner)
 * Doesn't get confused by adversarial traffic signs.
-* Inferring likely hazards from available clues before it occures, such as in the [unsecured cooler](#user-content-case-unsecured-cooler) case.
+* Infer likely hazard from visual clue before it occurs, such as in the [unsecured cooler](#user-content-case-unsecured-cooler) case.
 
 Following are cases where GPT-4V has performed less than stellar:
+
 * In the [lane closure](#user-content-case-lane-closure) case, GPT-4V mistakenly indicated that the **right lane** was closed when it should be the **left lane**. 
 * In the [wrong way](#user-content-case-wrong-way) case, GPT-4V has failed to spot that there is a car driving in the wrong direction in its initial response. However, further interactive queries with GPT-4V show that it has no problem locating the car in question, giving detail description, and suggesting appropriate actions.
-* In the [downed trees](user-content-case-downed-trees) case, GPT-4V got everything right but thought that the road is impassable. But during the follow-up Q&A, it re-evaluate and eventually agreed that part of the road is indeed still passable.
+* In the [downed trees](user-content-case-downed-trees) case, GPT-4V got everything right but thought that the road is impassable. But during the follow-up Q&A, it re-evaluated and eventually agreed that part of the road is indeed still passable.
 
 Comparison between OpenAI GPT-4V and Google Bard/Gemini (supposedly a mixture of the Pro and Ultra versions), based on limited tests on Bard/Gemini.
 - Bard/Gemini seems to have more problem with picking up text in the given image. For example:
@@ -58,7 +60,7 @@ Note that the emphasis in the responses given below are mine.
 
 ### Case: monster ahead
 ![monster ahead](images/monster2.jpg)
-[Image credit: Sean C Davis]()
+[Image credit: Poplavsky](https://www.artstation.com/artwork/qlzkR)
 
 - Notes: extremely unusual scene. Testing sense of reality.
 - Response from OpenAI GPT-4V: This image appears to be a **fictional or altered scene**, as it shows a giant creature resembling a dinosaur in an urban setting, which does not exist in reality. In the context of the scenario you've asked me to provide advice on, **if this were a real situation**, it would constitute an extreme hazard.
@@ -531,6 +533,26 @@ Note that the emphasis in the responses given below are mine.
 
         3. Check for traffic and pedestrians. Before proceeding, look carefully in all directions for oncoming traffic, including cars, motorcycles, bikes, and pedestrians. Use your mirrors and physically turn your head to check blind spots.
 
+### Case: confusing stop signs
+![confusing stop signs](images/confusing_stop_signs.jpg)
+- Notes: test for reasonable response when confronting confusing traffic signs
+- Response from OpenAI GPT-4V: The image shows a confusing set of traffic signs where the directional indicators contradict each other. The sign on the left indicates "LEFT TURN ONLY" while the sign in the middle says "TURN RIGHT ONLY" beneath a stop sign. The sign on the right also features a stop sign with "TURN LEFT ONLY" beneath it. This could lead to driver confusion.
+
+    Recommendation: Approach this intersection with extreme caution. Come to a complete stop as indicated by the STOP signs and assess the actual traffic flow and any additional signage that may clarify the correct direction. If it's safe to do so, proceed in the direction that seems to be supported by the flow of traffic, or wait to follow the actions of other drivers if present.
+
+    Explanation:
+
+    - Inconsistent signage can lead to accidents due to the mixed messages given to drivers.
+    - It's possible there's an error with the signage, so relying on the actual direction of the traffic lanes is important.
+    - If no traffic is present to follow, consider which sign appears to be the most recently installed or the most logical given the road layout, and proceed with caution.
+    - If the situation is too confusing or seems unsafe, it might be best to find an alternative route if possible.
+
+        Always prioritize safety and be prepared to explain your actions to law enforcement if stopped. After passing the intersection, it might be helpful to report the confusing signage to local authorities so they can address the issue.
+
+    Follow-up Q&A:
+    - User: Your advice is too long. Just tell me what to do with an one-liner that is easy to follow.
+    - GPT-4V: Stop at the sign, then proceed with caution in the direction consistent with other traffic or road layout.
+
 ### Case: unsecured cooler
 ![unsecured cooler](images/unsecured_cooler.jpg)
 - Notes: test ability to anticipate hazard that may occur
@@ -549,6 +571,26 @@ Note that the emphasis in the responses given below are mine.
     - Stay Alert: Be prepared for the unexpected, whether it's the cooler detaching or other drivers' reactions.
 
     Immediate Recommendation: Maintain a safe distance behind the truck and remain vigilant. If you are able to alert the driver safely about the insecure load, do so at the next stop or by signaling to them if it's safe and legal in your location.
+
+### Case: nearby wild fire
+![nearby wild fire](images/firefighting_airplane.jpg)
+- Notes: test the ability to infer nearby wild fire when none is directly visible.
+- Response from OpenAI GPT-4V: This image shows an aerial firefighting aircraft dropping fire retardant on a wildfire, which is a clear sign of a large-scale emergency.
+
+    Recommendation: Avoid the area. If you are driving and approach this scene, it's best to turn around and find an alternate route as soon as possible.
+
+    Explanation:
+
+    - Wildfires can spread rapidly and unpredictably, posing immediate danger to anyone in the vicinity.
+    - The presence of low-flying firefighting aircraft indicates active fire suppression operations, and the airspace will be restricted.
+    - Roads may be closed for safety and to allow emergency vehicles and personnel to operate effectively.
+    - Smoke can significantly reduce visibility and degrade air quality, making driving hazardous.
+    - There may be mandatory evacuation orders in place that you need to comply with.
+
+    For safety, maintain a safe distance from the affected area, and stay informed through local news or emergency services about the status of the wildfire and road closures.
+
+<!--
+-->
 
 <!--
 ### Case: 
