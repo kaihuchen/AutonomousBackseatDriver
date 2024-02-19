@@ -1,4 +1,4 @@
-<img src="https://github.com/kaihuchen/articles/tree/main/assets/images/level5.webp" alt="Banner Image" style="">
+<img src="images/level5.webp" alt="Banner Image" style="">
 
 # Evaluating Multimodal LLM's Use in Level 5 Autonomous Driving
 
