@@ -1,16 +1,16 @@
 <img src="images/level5.webp" alt="Banner Image" style="">
 
-# Evaluating Multimodal LLM's Use in Level 5 Autonomous Driving
+# Evaluating Multimodal LMM's Use in Level 5 Autonomous Driving
 
-*last updated February 1, 2024*
+*last updated February 19, 2024*
 
-This article introduces a set of test scenarios aimed at gauging the performance of a multimodal Large Language Model (LLM) within the scope of **real-world autonomous driving**. In these scenarios, the LLM takes on the role of a driver, is required to react appropriately to various road situations represented in images, and provide justifications for its decisions.
+This article introduces a set of test scenarios aimed at gauging the performance of a multimodal Large Language Model (i.e., Multimodal LLM, or LMM) within the scope of **real-world autonomous driving**. In these scenarios, the LMM takes on the role of a driver, is required to react appropriately to various road situations represented in images, and provide justifications for its decisions.
 
-The primary objective of these tests is to evaluate the LLM’s capacity to produce **commonsense reactions to unusual circumstances**. The overarching goal is to determine if the commonsense knowledge embedded within a multimodal LLM is adequate for practical use, not just in autonomous driving, but in broader applications as well.
+The primary objective of these tests is to evaluate an LMM’s capacity to produce **commonsense reactions to unusual circumstances**. The overarching goal is to determine if the commonsense knowledge embedded within an LMM is adequate for practical use, not just in autonomous driving, but in broader applications as well.
 
 Many of these test cases pose challenges for traditional computer vision systems, which are generally trained on predefined categories. These scenarios represent the [**long-tail cases**](https://spectrum.ieee.org/autonomous-cars-vs-kangaroos-the-long-furry-tail-of-unlikely-events) that fall outside the scope of the training data and often prove problematic for traditional approaches.
 
-If a multimodal LLM can successfully handle most of these test scenarios, it can be deemed to have the necessary **road commonsense** to function in the unpredictable real world. This also implies that it could be a useful additional element in an autonomous vehicle system.
+If an LMM can successfully handle most of these test scenarios, then perhaps we can say that it possesses the necessary **road commonsense** to function in the unpredictable real world. This also implies that it might have a place as an additional component in a Level 5 autonomous vehicle.
 
 ## Test Summary
 
@@ -18,13 +18,12 @@ Following is a quick summary of the tests. Overall the GPT-4V model has performe
 
 * Distinguish fantasy from reality (Gozilla on the road, flying DeLorean in front, etc.).
 * Recognize tornado on a billboard commercial as false positive, while a tornado alert on a digital display is correctly identified as true warning.
-* Spot pedestrian in crosswalk under low light situation.
-* Read and fully understanding complex signs with lots of text, including non-driving signs such as the [smash and grab](#user-content-case-complex-sign-with-social-warnings) case.
+* Read and fully understanding complex signs with a lot of text, including non-driving signs such as the [smash and grab](#user-content-case-complex-sign-with-social-warnings) case.
 * Reason against complex signs and answer interactive queries correctly (see case [too many signs](#user-content-case-too-many-signs))
 * Ignore impossible road sign (such as speed limit of 0)
 * Understanding uncommon warning signs (such as the 'low salt' sign)
 * Appropriate handling of unusual hazard (e.g., giant inflatable object blocking road, dangling electrical wire, nearly invisible overturned trailer, etc.)
-* Work around doubtful traffic sign (such as a singular knocked-over traffic cone)
+* Work around doubtful traffic sign (such as one single knocked-over traffic cone on the road)
 * Doesn't get distracted by inconsequential traffic signs (e.g., traffic cones in a corner)
 * Doesn't get confused by adversarial traffic signs.
 * Infer likely hazard from visual clue before it occurs, such as in the [unsecured cooler](#user-content-case-unsecured-cooler) case.
@@ -37,17 +36,18 @@ Following are cases where GPT-4V has performed less than stellar:
 
 Comparison between OpenAI GPT-4V and Google Bard/Gemini (supposedly a mixture of the Pro and Ultra versions), based on limited tests on Bard/Gemini.
 - Bard/Gemini seems to have more problem with picking up text in the given image. For example:
-    - in the [use closed lane](#user-content-case-use-closed-lane) case, it combines text from different and somewhat far apart signs ("MAJOR ACCIDENT" and "16") to read "Major Accident 16".
+    - In the [use closed lane](#user-content-case-use-closed-lane) case, it combines text from different and somewhat far apart signs ("MAJOR ACCIDENT" and "16") to read "Major Accident 16".
 - Bard/Gemini seems to have more problem understanding the overall situation when there are multiple clues in the image. For example:
-    - in the [use closed lane](#user-content-case-use-closed-lane) case, it gives advices on "LEFT LANES CLOSED" and "USE LEFT LANE" separately, seemingly not noticing that the two messages are contradictory to each other.
+    - In the [use closed lane](#user-content-case-use-closed-lane) case, it gives advices on "LEFT LANES CLOSED" and "USE LEFT LANE" separately, seemingly not noticing that the two messages are contradictory to each other.
     - In the [stop except right turn](#user-content-case-stop-except-right-turn) case, it correctly indicates that the addendum sign means **permitted to make a right turn without stopping again**, but overall still recommends **come to a complete stop** even after user confirming intention to make a right turn in the follow-up Q&A. 
-- When attempting to enter text/image of multiple test cases into the web UI of Bard/Gemini, it tends to get confused about which text or image should be used.
+- Bard/Gemini in many cases refuses to process the image given.
 
 ## Test Parameters
+
 * The test results listed below are mainly derived using OpenAI's GPT-4V model. At this time results from Googel Bard/Gemini are much more limited, due to problem where Bard/Gemini often refuses to process a given image. 
-* The LLMs in question here are meant for providing **high-level commonsense suggestions** and detailed explanations to autonomous vehicles operating in the **open world**. This is not for lower-level controls like lane following, navigation, or parking, but about assessing the overall situation and providing appropriate advice. 
+* The LMMs in question here are meant for providing **high-level commonsense suggestions** and detailed explanations to autonomous vehicles operating in the **open world**. This is not for lower-level controls like lane following, navigation, or parking, but about assessing the overall situation and providing appropriate advice. 
 * For the purpose of this study, issues such as cost and efficiency are intentionally ignored.
-* Note that multimodal LLM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [standing water or sink hole](#user-content-case-standing-water-or-sink-hole))
+* Note that LMM supports interactive query, which is invaluable when the case in question is complicated or confusing (see this case [standing water or sink hole](#user-content-case-standing-water-or-sink-hole))
 
 ## Test Cases
 
@@ -607,7 +607,7 @@ Note that the emphasis in the responses given below are mine.
 
 ## Additional Resources
 
-- This is part of a series of studies that investigate the use of multimodal LLMs (Large Language Models) for solving complex real-world problems. Here are some of them:
+- This is part of a series of studies that investigate the use of LMMs (Large Language Models) for solving complex real-world problems. Here are some of them:
     - [Diagnostic reasoning over medical images](https://github.com/kaihuchen/GenAiRadiologist) (*Unfinished*)
     - [CareAlerrt](https://github.com/kaihuchen/CareAlert): evaluates images for safety concerns and provides immediate guidance, for babies, seniors, and pets. (*Unfinished*)
 - If you have any comments, please leave them on the [issues section](https://github.com/kaihuchen/articles/issues) for this repository.
