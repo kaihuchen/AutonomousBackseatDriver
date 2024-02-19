@@ -1,4 +1,6 @@
-# Evaluating Multimodal LLM's Use in Autonomous Driving
+<img src="https://github.com/kaihuchen/articles/tree/main/assets/images/level5.webp" alt="Banner Image" style="">
+
+# Evaluating Multimodal LLM's Use in Level 5 Autonomous Driving
 
 *last updated February 1, 2024*
 
@@ -608,7 +610,7 @@ Note that the emphasis in the responses given below are mine.
 - This is part of a series of studies that investigate the use of multimodal LLMs (Large Language Models) for solving complex real-world problems. Here are some of them:
     - [Diagnostic reasoning over medical images](https://github.com/kaihuchen/GenAiRadiologist) (*Unfinished*)
     - [CareAlerrt](https://github.com/kaihuchen/CareAlert): evaluates images for safety concerns and provides immediate guidance, for babies, seniors, and pets. (*Unfinished*)
-- If you have any comments, please leave them on the issues section for this repository.
+- If you have any comments, please leave them on the [issues section](https://github.com/kaihuchen/articles/issues) for this repository.
 - A **live demo** named [Autonomouse Backseat Driver](https://chat.openai.com/g/g-e4IV3KhGm-autonomous-backseat-driver) is made available as a Custom GPT in OpenAI's GPTs Store (a subscription to ChatGPT Plus may be required by OpenAI).
 
     We named this Custom GPT **Autonomous Backseat Driver**, because it behaves kind of like a backseat passenger who offers plenty of suggestions but controls nothing.
